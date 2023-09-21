@@ -1,0 +1,1094 @@
+[
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_item_order_status.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\item_order_status.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_layout_no_address.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\layout_no_address.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-mdpi_ic_cute_book_pencil_cartoon_foreground.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-mdpi\\ic_cute_book_pencil_cartoon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_fragment_bottom_remove_address.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\fragment_bottom_remove_address.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_playlist_remove.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_playlist_remove.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_lightsalmon_1.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_lightsalmon_1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\color_custom_color_button.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\color\\custom_color_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_enter_username.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_enter_username.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__activity_user_info.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_activity_user_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_fragment_bottom_remove_cart.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\fragment_bottom_remove_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__fragment_category_info.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_fragment_category_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_list_background_oval.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\list_background_oval.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_like_background_oval.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\like_background_oval.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_item_order_detail.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\item_order_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_shadow.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\shadow.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_person.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_person.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__fragment_statistics.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_fragment_statistics.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xhdpi_ic_cash.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xhdpi\\ic_cash.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_otp.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_otp.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_blue_1.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_blue_1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_shopping_bag_light_blue.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_shopping_bag_light_blue.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxxhdpi_ic_cash.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xxxhdpi\\ic_cash.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_blue_3.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_blue_3.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_fragment_account.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\fragment_account.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xhdpi_ic_cute_book_pencil_cartoon_foreground.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-xhdpi\\ic_cute_book_pencil_cartoon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_item_product.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\item_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\color_bg_btn_green.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\color\\bg_btn_green.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_new_import.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_new_import.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_add_white.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_add_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxhdpi_ic_cute_book_pencil_cartoon_round.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-xxhdpi\\ic_cute_book_pencil_cartoon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_baseline_clear.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_baseline_clear.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\color_custom_color_button_cancel.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\color\\custom_color_button_cancel.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_delete_outline.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_delete_outline.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-anydpi-v26_ic_cute_book_pencil_cartoon.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-anydpi-v26\\ic_cute_book_pencil_cartoon.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__activity_import_detail.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_activity_import_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_bg_btn_add_to_cart_circle.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\bg_btn_add_to_cart_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_address.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_address.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxhdpi_ic_cash.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xxhdpi\\ic_cash.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_discount.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_discount.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-mdpi_ic_momo.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-mdpi\\ic_momo.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_pink_5.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_pink_5.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_fragment_tab_signup.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\fragment_tab_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_check_out.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_check_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__item_category.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_item_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_settings2.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_settings2.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__item_new_import.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_item_new_import.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_bg_item_detail_header.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\bg_item_detail_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_item_pdw.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\item_pdw.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_bg_searchview.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\bg_searchview.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_toolbar_detail_search.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\toolbar_detail_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_bg_edt_edit_address.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\bg_edt_edit_address.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxhdpi_ic_cute_book_pencil_cartoon_foreground.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-xxhdpi\\ic_cute_book_pencil_cartoon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_fragment_host_cart.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\fragment_host_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_order_detail.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_order_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xhdpi_ic_momo.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xhdpi\\ic_momo.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_playlist_remove_white.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_playlist_remove_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_bg_item_detail.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\bg_item_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_branding_watermark.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_branding_watermark.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_bg_dialog_header.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\bg_dialog_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_bg_edt_black_border.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\bg_edt_black_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\menu_menu_main.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable-v24_co_vn.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable-v24\\co_vn.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_fragment_cart.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\fragment_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_edit_address.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_edit_address.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_transition_background_drawable_like.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\transition_background_drawable_like.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_item_account_option.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\item_account_option.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_item_comment.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\item_comment.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_notifications.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_notifications.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_detail.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_stationery_cute_girl.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_stationery_cute_girl.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_white_1.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_white_1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_pink_3.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_pink_3.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_fragment_bottom_pdw.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\fragment_bottom_pdw.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_pink_2.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_pink_2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_item_cart_simplify.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\item_cart_simplify.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_star_outline.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_star_outline.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_white_2.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_white_2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxxhdpi_ic_cute_book_pencil_cartoon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-xxxhdpi\\ic_cute_book_pencil_cartoon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_blue_5.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_blue_5.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_logout.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_logout.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_add.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_layout_header_nav.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\layout_header_nav.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_toolbar_detail.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\toolbar_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_credit_card.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_credit_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_login.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_confirm_return.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_confirm_return.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_blue_4.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_blue_4.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xhdpi_ic_cute_book_pencil_cartoon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-xhdpi\\ic_cute_book_pencil_cartoon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_arrow_forward.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_arrow_forward.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_playlist_add.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_playlist_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_item_return.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\item_return.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_pink_1_vertical.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_pink_1_vertical.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__activity_product_info.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_activity_product_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_pink_4.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_pink_4.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_category.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-hdpi_ic_cute_book_pencil_cartoon_foreground.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-hdpi\\ic_cute_book_pencil_cartoon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__activity_order_detail.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_activity_order_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout-land__fragment_statistics.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout-land\\_fragment_statistics.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_onboarding.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_easy_payment.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_easy_payment.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_change_password.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_change_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_quantity.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_quantity.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout-land__fragment_user.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout-land\\_fragment_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_home.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_item_category.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\item_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable-v24_co_anh.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable-v24\\co_anh.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__fragment_user_list.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_fragment_user_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-anydpi-v26_ic_cute_book_pencil_cartoon_round.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-anydpi-v26\\ic_cute_book_pencil_cartoon_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_check_box_white.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_check_box_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_new_password.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_new_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_transition_background_drawable_home.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\transition_background_drawable_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-mdpi_ic_cash.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-mdpi\\ic_cash.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_fragment_tab_login.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\fragment_tab_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_choose_pay.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_choose_pay.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_cancel_white.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_cancel_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_abc.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_abc.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_rate.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_rate.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_xbg_edt_info.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\xbg_edt_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_like.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_like.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\color_bg_btn_blue.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\color\\bg_btn_blue.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_image.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_cute_book_pencil_cartoon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_cute_book_pencil_cartoon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xhdpi_ic_zalopay.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xhdpi\\ic_zalopay.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_password.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_green_1.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_green_1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_price.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_price.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_default_avatar.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_default_avatar.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout-land__activity_main.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout-land\\_activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_item_order.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\item_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_add_shopping_cart.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_add_shopping_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_bg_btn_light_blue.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\bg_btn_light_blue.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-mdpi_ic_cute_book_pencil_cartoon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-mdpi\\ic_cute_book_pencil_cartoon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__fragment_blank.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_fragment_blank.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_fragment_blank.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\fragment_blank.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_cancel.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_cancel.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxxhdpi_ic_zalopay.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xxxhdpi\\ic_zalopay.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_shopping_cart.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_shopping_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-mdpi_ic_cute_book_pencil_cartoon_round.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-mdpi\\ic_cute_book_pencil_cartoon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_transition_background_drawable_person.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\transition_background_drawable_person.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_keyboard_arrow_down.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_keyboard_arrow_down.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_playlist.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_playlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_sticky_note.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_sticky_note.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__fragment_import.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_fragment_import.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_shopping_bag.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_shopping_bag.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_cart.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__fragment_order.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_fragment_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_stationery_cardboard_box.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_stationery_cardboard_box.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_mail_outline.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_mail_outline.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\menu_menu_bottom_nav.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\menu\\menu_bottom_nav.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_item_cart.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\item_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_bg_tv_discount.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\bg_tv_discount.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_fragment_onboarding.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\fragment_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\color_bg_btn_red.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\color\\bg_btn_red.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_person_background_oval.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\person_background_oval.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_stationery_school.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_stationery_school.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_bg_btn_login.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\bg_btn_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_remove.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_remove.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__item_user.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_item_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_bg_btn_get_started.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\bg_btn_get_started.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_bg_edt_login.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\bg_edt_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_facebook.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_facebook.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__fragment_product_list.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_fragment_product_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-hdpi_ic_cash.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-hdpi\\ic_cash.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxhdpi_ic_momo.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xxhdpi\\ic_momo.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_add_photo_alternate.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_add_photo_alternate.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_fragment_category.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\fragment_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-hdpi_ic_cute_book_pencil_cartoon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-hdpi\\ic_cute_book_pencil_cartoon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xhdpi_ic_cute_book_pencil_cartoon_round.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-xhdpi\\ic_cute_book_pencil_cartoon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-hdpi_ic_momo.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-hdpi\\ic_momo.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_check_box.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_check_box.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_user.JPG.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_user.JPG"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-mdpi_ic_zalopay.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-mdpi\\ic_zalopay.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_fragment_product.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\fragment_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\color_bottom_nav.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\color\\bottom_nav.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__dialog_new_import.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_dialog_new_import.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_transition_background_drawable_search.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\transition_background_drawable_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_star.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_star.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_auto_stories.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_auto_stories.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_lock.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_lock.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\menu__menu_action.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\menu\\_menu_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_blue_6.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_blue_6.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__item_order.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_item_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-hdpi_ic_zalopay.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-hdpi\\ic_zalopay.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_search_background_oval.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\search_background_oval.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_fragment_order.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\fragment_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_fast_delivery.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_fast_delivery.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_settings.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__fragment_product.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_fragment_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_fragment_bottom_select_address.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\fragment_bottom_select_address.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_order.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_order.xml"
+    },
+    {
+        "merged": "com.ministore.android.app-merged_res-41:/layout_activity_return.xml.flat",
+        "source": "com.ministore.android.app-main-43:/layout/activity_return.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\menu_menu_nav.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\menu\\menu_nav.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxxhdpi_ic_cute_book_pencil_cartoon_foreground.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-xxxhdpi\\ic_cute_book_pencil_cartoon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_layout_logo_app.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\layout_logo_app.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_google.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_google.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_item_selected_cart.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\item_selected_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__fragment_category_list.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_fragment_category_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_bg_circle_indicator.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\bg_circle_indicator.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_violet_1.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_violet_1.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_blue_1_vertical.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_blue_1_vertical.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_item_detail.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\item_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_stationery_cute_student.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_stationery_cute_student.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxhdpi_ic_cute_book_pencil_cartoon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-xxhdpi\\ic_cute_book_pencil_cartoon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__fragment_user.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_fragment_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_vpn_key.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_vpn_key.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_arrow_back.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_arrow_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_book.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_book.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout-land__fragment_product.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout-land\\_fragment_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_return.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_return.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_caculation_unit.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_caculation_unit.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_item_poster.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\item_poster.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-hdpi_ic_cute_book_pencil_cartoon_round.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-hdpi\\ic_cute_book_pencil_cartoon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_choose__email_phone.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\choose__email_phone.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__fragment_user_info.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_fragment_user_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_pink_1.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_pink_1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__item_product.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_item_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_find_product.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_find_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_lightsteelblue_1.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_lightsteelblue_1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\raw_pencil_drawing.json.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\raw\\pencil_drawing.json"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_product.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxhdpi_ic_zalopay.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xxhdpi\\ic_zalopay.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\color_bg_btn_gray.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\color\\bg_btn_gray.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_blue_7.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_blue_7.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__fragment_import_list.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_fragment_import_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_home_background_oval.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\home_background_oval.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__activity_category_info.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_activity_category_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxxhdpi_ic_cute_book_pencil_cartoon_round.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\mipmap-xxxhdpi\\ic_cute_book_pencil_cartoon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_item_address.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\item_address.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__fragment_category.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_fragment_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__activity_main.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_pie_chart.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_pie_chart.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_bg_login_tab.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\bg_login_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_blue_2.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_blue_2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__fragment_tab1.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_fragment_tab1.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_edit_note.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_edit_note.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout__fragment_product_info.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\_fragment_product_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout_layout_search_product.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout\\layout_search_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_phone_android.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_phone_android.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_transition_background_drawable_list.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\transition_background_drawable_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\layout-land__fragment_category.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\layout-land\\_fragment_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_assignment.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_assignment.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\mipmap-xxxhdpi_ic_momo.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-debug-42:\\mipmap-xxxhdpi\\ic_momo.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_ic_delivery_dining.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\ic_delivery_dining.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_back_pink_6.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_back_pink_6.jpg"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-merged_res-41:\\drawable_img_location.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.4\\com.ministore.android.app-main-43:\\drawable\\img_location.png"
+    }
+]

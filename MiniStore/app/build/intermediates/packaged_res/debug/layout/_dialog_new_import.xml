@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/large_title"
+        android:text="Add product" />
+
+    <Spinner
+        android:layout_margin="8dp"
+        android:id="@+id/spProduct"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/xbg_edt_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="8dp"
+        android:id="@+id/til_price"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:endIconMode="clear_text"
+        app:helperText="@string/great_than"
+        app:helperTextTextColor="@color/dark_pink"
+        app:startIconDrawable="@drawable/ic_price">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xbg_edt_info"
+            android:hint="@string/price"
+            android:text="0"
+            android:imeOptions="actionNext"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="8dp"
+        android:id="@+id/til_discount"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:helperText="@string/great_than"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="@color/dark_pink"
+        app:startIconDrawable="@drawable/ic_quantity">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xbg_edt_info"
+            android:hint="Quanity"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:text="0" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnComfirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/custom_color_button"
+            android:text="Comfirm" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/custom_color_button_cancel"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</LinearLayout>

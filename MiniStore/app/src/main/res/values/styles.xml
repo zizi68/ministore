@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="large_title">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/bg_dialog_header</item>
+    </style>
+
+    <style name="topFrame">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:background">@drawable/shadow</item>
+    </style>
+
+    <style name="detail_header_style">
+        <item name="android:background">@drawable/bg_item_detail_header</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="detail_content_style">
+        <item name="android:background">@drawable/bg_item_detail</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow">
+        <item name="android:colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="tv_header_edit_address">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="tv_content_edit_address">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/bg_edt_edit_address</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:drawableEnd">@drawable/ic_keyboard_arrow_down</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

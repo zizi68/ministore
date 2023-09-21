@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment._ProductInfoFragment">
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_header"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@color/light_blue"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="10dp"-->
+<!--        android:text="Category"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold" />-->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_footer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_id"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:enabled="false"
+                app:endIconMode="none"
+                app:helperTextTextColor="@color/dark_pink"
+                app:startIconDrawable="@drawable/ic_credit_card">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_idP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xbg_edt_info"
+                    android:hint="ID"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:endIconMode="clear_text"
+                app:helperText="@string/mandatory"
+                app:helperTextTextColor="@color/dark_pink"
+                app:startIconDrawable="@drawable/ic_category">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_nameP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xbg_edt_info"
+                    android:hint="@string/name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_description"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:endIconMode="clear_text"
+                app:helperTextTextColor="@color/dark_pink"
+                app:startIconDrawable="@drawable/ic_sticky_note">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_descriptionP"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/xbg_edt_info"
+                    android:hint="@string/description"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_caculationUnit"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:endIconMode="clear_text"
+                app:helperText="@string/mandatory"
+                app:helperTextTextColor="@color/dark_pink"
+                app:startIconDrawable="@drawable/ic_caculation_unit">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_caculationUnitP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xbg_edt_info"
+                    android:hint="@string/calculation_unit"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_discount"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:endIconMode="clear_text"
+                app:helperTextTextColor="@color/dark_pink"
+                app:startIconDrawable="@drawable/ic_discount">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_discountP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xbg_edt_info"
+                    android:hint="@string/discount"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:text="0" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_price"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:endIconMode="clear_text"
+                app:helperText="@string/great_than"
+                app:helperTextTextColor="@color/dark_pink"
+                app:startIconDrawable="@drawable/ic_price">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_priceP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xbg_edt_info"
+                    android:hint="@string/price"
+                    android:imeOptions="actionNext"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_quantity"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:endIconMode="clear_text"
+                app:helperText="@string/great_than"
+                app:helperTextTextColor="@color/dark_pink"
+                app:startIconDrawable="@drawable/ic_quantity">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_quantityP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xbg_edt_info"
+                    android:hint="@string/quantity"
+                    android:imeOptions="actionNext"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_sold_quantity"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:enabled="false"
+                app:endIconMode="clear_text"
+                app:helperTextTextColor="@color/dark_pink"
+                app:startIconDrawable="@drawable/ic_quantity">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_sold_quantityP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xbg_edt_info"
+                    android:hint="@string/sold_quantity"
+                    android:imeOptions="actionNext"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_specification"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:endIconMode="clear_text"
+                app:helperTextTextColor="@color/dark_pink"
+                app:startIconDrawable="@drawable/ic_caculation_unit">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_specificationP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xbg_edt_info"
+                    android:hint="@string/specification"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/sp_categoryP"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/xbg_edt_info"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <Spinner
+                android:id="@+id/sp_brandP"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/xbg_edt_info"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <CheckBox
+                android:id="@+id/cb_statusP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/xbg_edt_info"
+                android:text="@string/available" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/image"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/img_productP"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_add_photo_alternate" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+<!--    VERTICAL-->
+<!--    <LinearLayout-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_add"-->
+<!--            android:text="Insert"-->
+<!--            android:textSize="12sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:backgroundTint="@color/bg_btn_blue"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"/>-->
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_edit"-->
+<!--            android:text="Update"-->
+<!--            android:textSize="12sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:backgroundTint="@color/bg_btn_green"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"/>-->
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_edit_profile3"-->
+<!--            android:text="Delete"-->
+<!--            android:textSize="12sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:backgroundTint="@color/bg_btn_red"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"/>-->
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_clear"-->
+<!--            android:text="Clear"-->
+<!--            android:textSize="12sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:backgroundTint="@color/bg_btn_gray"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"/>-->
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_insertP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/bg_btn_blue"
+            android:drawableStart="@drawable/ic_add"
+            android:text="@string/_menu_insert"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_updateP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/bg_btn_green"
+            android:drawableStart="@drawable/ic_edit_note"
+            android:text="@string/_menu_update"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_deleteP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/bg_btn_red"
+            android:drawableStart="@drawable/ic_delete_outline"
+            android:text="@string/_menu_delete"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_clearP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/bg_btn_gray"
+            android:drawableStart="@drawable/ic_baseline_clear"
+            android:text="@string/clear"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

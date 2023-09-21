@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:text="ORDER DETAIL"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username: "
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tvUsernameO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="emyeuanh"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: "
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tvAddressO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hà Nội"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: "
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tvDateO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15-05-2022"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total price: "
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tvTotalPriceO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12,000,000đ"
+                android:textColor="@color/red"
+                android:textSize="17dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="Accept"
+                android:backgroundTint="@color/blue_inactive"
+                android:id="@+id/btnAccept"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="@color/bg_btn_red"
+                android:text="Deny"
+                android:id="@+id/btnDeny"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/rcvOrderDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+</LinearLayout>
