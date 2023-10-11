@@ -10,6 +10,7 @@ import controller.ProductController;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
@@ -19,7 +20,6 @@ import model.ImportDetail;
 import model.Response;
 import swing.UIController;
 import view.login.LoginFrame;
-import view.products.*;
 
 public class NewImportDialog extends javax.swing.JDialog {
 
@@ -535,7 +535,7 @@ public class NewImportDialog extends javax.swing.JDialog {
 
     private void jButton_CreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_CreateActionPerformed
         // TODO add your handling code here:
-        if(importDetail.size() == 0)
+        if(importDetail.isEmpty())
             JOptionPane.showMessageDialog(this, "Import detail is empty");
         else{
             Response res = ic.addImport(LoginFrame.userID, totalPrice, importDetail);

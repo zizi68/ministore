@@ -11,8 +11,6 @@ import javax.swing.JOptionPane;
 import model.ERole;
 import model.Login;
 import utils.ConnectAPI;
-//import model.database.Connect;
-//import org.mindrot.bcrypt.BCrypt;
 import view.admin.AdminMainFrame;
 
 /**
@@ -21,7 +19,6 @@ import view.admin.AdminMainFrame;
  */
 public class LoginFrame extends javax.swing.JFrame {
 
-    private RecoveryPasswordDialog recoveryPasswordDialog;
     private AdminMainFrame adminMainFrame;
     private LoginController lc;
 
@@ -33,7 +30,6 @@ public class LoginFrame extends javax.swing.JFrame {
     public static String name;
     public static int userID = 2;
     private String password;
-    private int Idrole;
 
     /**
      * Creates new form LoginFrame
@@ -264,23 +260,18 @@ public class LoginFrame extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LoginFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LoginFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LoginFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(LoginFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
 
+        //</editor-fold>
+        //</editor-fold>
+
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new LoginFrame().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new LoginFrame().setVisible(true);
         });
     }
 

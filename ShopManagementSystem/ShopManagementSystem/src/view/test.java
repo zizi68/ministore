@@ -10,14 +10,12 @@ import controller.LoginController;
 import controller.ProductController;
 import java.io.IOException;
 import model.Login;
-import model.Product;
 import model.Response;
-import output.ResponseMessage;
 import utils.ConnectAPI;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class test {
 
@@ -45,7 +43,7 @@ public class test {
          */
 
         LoginController loginController = new LoginController();
-        Login output = loginController.login("reintrinh", "123456");
+        Login output = loginController.login("admin", "123456");
         System.out.println(output.getRoles().toArray()[0]);
         ConnectAPI.tokenType = output.getTokenType();
         ConnectAPI.accessToken = output.getAccessToken();

@@ -3,13 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/HP/OneDrive%20-%20Sang%20ltd/Documents/Tot%20nghiep/DoAnTotNghiep2022/ShopManagementSystem/ShopManagementSystem/src/view/statistics/StatisticsPanel.java</file>
-            <file>file:/C:/Users/HP/OneDrive%20-%20Sang%20ltd/Documents/Tot%20nghiep/DoAnTotNghiep2022/ShopManagementSystem/ShopManagementSystem/src/view/imports/ProductImportDialog.java</file>
-            <file>file:/C:/Users/HP/OneDrive%20-%20Sang%20ltd/Documents/Tot%20nghiep/DoAnTotNghiep2022/ShopManagementSystem/ShopManagementSystem/src/view/products/PanelProduct.java</file>
-            <file>file:/C:/Users/HP/OneDrive%20-%20Sang%20ltd/Documents/Tot%20nghiep/DoAnTotNghiep2022/ShopManagementSystem/ShopManagementSystem/src/utils/ConnectAPI.java</file>
-            <file>file:/C:/Users/HP/OneDrive%20-%20Sang%20ltd/Documents/Tot%20nghiep/DoAnTotNghiep2022/ShopManagementSystem/ShopManagementSystem/src/utils/File.java</file>
-            <file>file:/C:/Users/HP/OneDrive%20-%20Sang%20ltd/Documents/Tot%20nghiep/DoAnTotNghiep2022/ShopManagementSystem/ShopManagementSystem/src/controller/ReturnController.java</file>
-            <file>file:/C:/Users/HP/OneDrive%20-%20Sang%20ltd/Documents/Tot%20nghiep/DoAnTotNghiep2022/ShopManagementSystem/ShopManagementSystem/src/view/orders/ReturnDetailDialog.java</file>
+            <file>file:/D:/Projects/ministore/ShopManagementSystem/ShopManagementSystem/src/view/test.java</file>
+            <file>file:/D:/Projects/ministore/ShopManagementSystem/ShopManagementSystem/src/view/imports/NewImportDialog.java</file>
+            <file>file:/D:/Projects/ministore/ShopManagementSystem/ShopManagementSystem/src/controller/BaseController.java</file>
+            <file>file:/D:/Projects/ministore/ShopManagementSystem/ShopManagementSystem/src/controller/AddressController.java</file>
+            <file>file:/D:/Projects/ministore/ShopManagementSystem/ShopManagementSystem/src/model/Login.java</file>
+            <file>file:/D:/Projects/ministore/ShopManagementSystem/ShopManagementSystem/src/view/admin/AdminMainFrame.java</file>
+            <file>file:/D:/Projects/ministore/ShopManagementSystem/ShopManagementSystem/src/view/login/LoginFrame.java</file>
+            <file>file:/D:/Projects/ministore/ShopManagementSystem/ShopManagementSystem/src/controller/LoginController.java</file>
         </group>
     </open-files>
 </project-private>

@@ -11,7 +11,7 @@ import utils.ConnectAPI;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class LoginController extends BaseController {
 
