@@ -11,6 +11,7 @@ import javax.swing.JOptionPane;
 import model.ERole;
 import model.Login;
 import utils.ConnectAPI;
+import utils.MessageConstants;
 import view.admin.AdminMainFrame;
 
 /**
@@ -213,22 +214,22 @@ public class LoginFrame extends javax.swing.JFrame {
         username = jTextField_Username.getText();
         password = new String(jPasswordField_Pass.getPassword());
         if (jTextField_Username.getText().trim().equalsIgnoreCase("")) {
-            JOptionPane.showMessageDialog(null, "Username không được để khoảng trắng. Vui lòng nhập lại!", "Thông báo", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, MessageConstants.USERNAME_NOT_BLANK, "Thông báo", JOptionPane.ERROR_MESSAGE);
             return;
         }
         if (password.equalsIgnoreCase("")) {
-            JOptionPane.showMessageDialog(null, "Không được để trống password. Vui lòng nhập lại!", "Thông báo", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, MessageConstants.PASSWORD_NOT_BLANK, "Thông báo", JOptionPane.ERROR_MESSAGE);
             return;
         }
         Login userLogin = lc.login(username, password);
 
         if (userLogin == null) {
-            JOptionPane.showMessageDialog(null, "Username hoặc password không đúng. Vui lòng nhập lại!", "Thông báo", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, MessageConstants.LOGIN_INFO_NOT_VALID, "Thông báo", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
         if (!userLogin.getRoles().contains(ERole.ROLE_ADMIN)) {
-            JOptionPane.showMessageDialog(null, "Bạn không có quyền đăng nhập vào hệ thống quản trị!", "Thông báo", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, MessageConstants.FORBIDDEN, "Thông báo", JOptionPane.ERROR_MESSAGE);
             return;
         }
 

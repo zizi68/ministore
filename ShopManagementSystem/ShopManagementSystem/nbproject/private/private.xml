@@ -10,7 +10,9 @@
             <file>file:/D:/Projects/ministore/ShopManagementSystem/ShopManagementSystem/src/model/Login.java</file>
             <file>file:/D:/Projects/ministore/ShopManagementSystem/ShopManagementSystem/src/view/admin/AdminMainFrame.java</file>
             <file>file:/D:/Projects/ministore/ShopManagementSystem/ShopManagementSystem/src/view/login/LoginFrame.java</file>
+            <file>file:/D:/Projects/ministore/ShopManagementSystem/ShopManagementSystem/src/utils/ConnectAPI.java</file>
             <file>file:/D:/Projects/ministore/ShopManagementSystem/ShopManagementSystem/src/controller/LoginController.java</file>
+            <file>file:/D:/Projects/ministore/ShopManagementSystem/ShopManagementSystem/src/utils/MessageConstants.java</file>
         </group>
     </open-files>
 </project-private>
