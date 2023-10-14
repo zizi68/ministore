@@ -20,6 +20,7 @@ import com.ministore.android.R;
 import com.ministore.android.api.ApiService;
 import com.ministore.android.model.ResponseObject;
 import com.ministore.android.model.SignupRequest;
+import com.ministore.android.util.Constants;
 
 import java.io.IOException;
 
@@ -71,7 +72,7 @@ public class SignupTabFragment extends Fragment {
                 String phone = edtPhone.getText().toString().trim();
 
                 if (username.isEmpty() || password.isEmpty() || firstName.isEmpty() || lastName.isEmpty() || email.isEmpty() || phone.isEmpty()) {
-                    showMessage("Hãy điền đầy đủ các thông tin!");
+                    showMessage(Constants.VALIDATION_INFO_E001.getMessage());
                     return;
                 }
 

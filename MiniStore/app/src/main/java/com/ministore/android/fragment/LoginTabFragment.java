@@ -24,6 +24,7 @@ import com.ministore.android.activity.MainActivity;
 import com.ministore.android.api.ApiService;
 import com.ministore.android.model.JwtResponse;
 import com.ministore.android.model.LoginRequest;
+import com.ministore.android.util.Constants;
 
 import io.paperdb.Paper;
 import retrofit2.Call;
@@ -65,7 +66,7 @@ public class LoginTabFragment extends Fragment {
                 String password = edtPassword.getText().toString().trim();
 
                 if (username.isEmpty() || password.isEmpty()) {
-                    showMessage("Hãy nhập đầy đủ các thông tin!");
+                    showMessage(Constants.VALIDATION_INFO_E001.getMessage());
                     return;
                 }
 
@@ -78,11 +79,11 @@ public class LoginTabFragment extends Fragment {
                             @Override
                             public void onResponse(Call<JwtResponse> call, Response<JwtResponse> response) {
                                 if (response.code() == 401) {
-                                    showMessage("Tên đăng nhập hoặc mật khẩu của bạn không chính xác!");
+                                    showMessage(Constants.VALIDATION_MESSAGE_401.getMessage());
                                     return;
                                 }
                                 if (!response.isSuccessful()) {
-                                    showMessage("Đăng nhập thất bại!\n" + response.message());
+                                    showMessage(Constants.VALIDATION_FAIL.getMessage() + response.message());
                                     return;
                                 }
                                 JwtResponse jwtResponse = response.body();
@@ -117,8 +118,8 @@ public class LoginTabFragment extends Fragment {
         txtForgetPassword = view.findViewById(R.id.txt_login_forget);
         btnLogin = view.findViewById(R.id.btn_login);
         txtForgotPass = view.findViewById(R.id.txt_login_forget);
-        edtUsername.setText("reintrinh");
-        edtPassword.setText("123456");
+        edtUsername.setText("");
+        edtPassword.setText("");
     }
 
     private void setAnimation() {
