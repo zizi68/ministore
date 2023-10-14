@@ -196,19 +196,19 @@ public class UserController {
 			User user = userService.findById(request.getId());
 			String username = request.getUsername();
 			if (!username.equals(user.getUsername()) && userService.existsByUsername(username)) {
-				return ResponseEntity.badRequest().body(Constants.VALIDATION_NAME_E002);
+				return ResponseEntity.badRequest().body(Constants.VALIDATION_NAME_E002.getMessage());
 			}
 			String email = request.getEmail();
 			if (!email.equals(user.getEmail()) && userService.existsByEmail(email)) {
-				return ResponseEntity.badRequest().body(Constants.VALIDATION_EMAIL_E003);
+				return ResponseEntity.badRequest().body(Constants.VALIDATION_EMAIL_E003.getMessage());
 			}
 			String phone = request.getPhone();
 			if (!phone.equals(user.getPhone()) && userService.existsByPhone(phone)) {
-				return ResponseEntity.badRequest().body(Constants.VALIDATION_PHONE_E002);
+				return ResponseEntity.badRequest().body(Constants.VALIDATION_PHONE_E002.getMessage());
 			}
 			if (bindingResult.hasErrors()) {
 				return ResponseEntity.badRequest()
-						.body("Error: " + bindingResult.getAllErrors().get(0).getDefaultMessage());
+						.body(Constants.VALIDATION_EMAIL_E002.getMessage());
 			}
 			String firstName = request.getFirstName();
 			String lastName = request.getLastName();
@@ -223,7 +223,7 @@ public class UserController {
 			userService.updateProfile(user);
 			return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), null);
 		} catch (NotFoundException e) {
-			return AppUtils.returnJS(HttpStatus.NOT_FOUND, "User is unavaiable", null);
+			return AppUtils.returnJS(HttpStatus.NOT_FOUND, Constants.VALIDATION_EMAIL_E002.getMessage(), null);
 		}
 	}
 
