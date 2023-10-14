@@ -19,6 +19,7 @@ import com.moht1.webapi.repository.RoleRepository;
 import com.moht1.webapi.repository.UserRepository;
 import com.moht1.webapi.security.jwt.JwtUtils;
 import com.moht1.webapi.security.services.UserDetailsImpl;
+import com.moht1.webapi.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -79,16 +80,16 @@ public class AuthController {
 	@PostMapping("/signup")
 	public ResponseEntity<ResponseObject> registerUser(@Valid @RequestBody SignupRequest signUpRequest) {
 		if (userRepository.existsByUsername(signUpRequest.getUsername())) {
-			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User registered failed! " +
-					"Username is already taken!", null);
+			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_NAME_E002.getMessage(), null);
+		}
+		if (signUpRequest.getPassword().trim().length() < 6 || signUpRequest.getPassword().trim().length() > 40) {
+			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_PASSWORD_E002.getMessage(), null);
 		}
 		if (userRepository.existsByEmail(signUpRequest.getEmail())) {
-			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User registered failed! " +
-					"Email is already in use!", null);
+			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_EMAIL_E002.getMessage(), null);
 		}
 		if (userRepository.existsByPhone(signUpRequest.getPhone())) {
-			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User registered failed! " +
-					"Phone is already in use!", null);
+			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_PHONE_E002.getMessage(), null);
 		}
 		
 		// Create new user's account
@@ -100,29 +101,29 @@ public class AuthController {
 		Set<Role> roles = new HashSet<>();
 		if (strRoles == null) {
 			Role userRole = roleRepository.findByName(ERole.ROLE_USER)
-					.orElseThrow(() -> new RuntimeException("Error: Role is not found."));
+					.orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
 			roles.add(userRole);
 		} else {
 			strRoles.forEach(role -> {
 				switch (role) {
 				case "admin":
 					Role adminRole = roleRepository.findByName(ERole.ROLE_ADMIN)
-							.orElseThrow(() -> new RuntimeException("Error: Role is not found."));
+							.orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
 					roles.add(adminRole);
 					break;
 				case "staff":
 					Role staffRole = roleRepository.findByName(ERole.ROLE_STAFF)
-							.orElseThrow(() -> new RuntimeException("Error: Role is not found."));
+							.orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
 					roles.add(staffRole);
 					break;
 				case "shipper":
 					Role shipperRole = roleRepository.findByName(ERole.ROLE_SHIPPER)
-							.orElseThrow(() -> new RuntimeException("Error: Role is not found."));
+							.orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
 					roles.add(shipperRole);
 					break;
 				default:
 					Role userRole = roleRepository.findByName(ERole.ROLE_USER)
-							.orElseThrow(() -> new RuntimeException("Error: Role is not found."));
+							.orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
 					roles.add(userRole);
 				}
 			});
@@ -137,11 +138,10 @@ public class AuthController {
 		
 		try {		
 			User userUpdated = userRepository.save(user);
-			return AppUtils.returnJS(HttpStatus.OK, "User registered successfully!", userUpdated);
+			return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), userUpdated);
 		} catch (ConstraintViolationException e) {
 			// TODO: handle exception
-			return AppUtils.returnJS(HttpStatus.BAD_REQUEST,  "User registered failed!" +
-					AppUtils.getExceptionSql(e), null);
+			return AppUtils.returnJS(HttpStatus.BAD_REQUEST,  Constants.VALIDATION_EMAIL_E002.getMessage(), null);
 
 		}
 	}
