@@ -16,6 +16,7 @@ import com.moht1.webapi.payload.request.UpdateProfileRequest;
 import com.moht1.webapi.repository.UserRepository;
 import com.moht1.webapi.service.AddressService;
 import com.moht1.webapi.service.UserService;
+import com.moht1.webapi.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.InputStreamResource;
@@ -195,15 +196,15 @@ public class UserController {
 			User user = userService.findById(request.getId());
 			String username = request.getUsername();
 			if (!username.equals(user.getUsername()) && userService.existsByUsername(username)) {
-				return ResponseEntity.badRequest().body("Error: Username is already taken!");
+				return ResponseEntity.badRequest().body(Constants.VALIDATION_NAME_E002);
 			}
 			String email = request.getEmail();
 			if (!email.equals(user.getEmail()) && userService.existsByEmail(email)) {
-				return ResponseEntity.badRequest().body("Error: Email is already taken!");
+				return ResponseEntity.badRequest().body(Constants.VALIDATION_EMAIL_E003);
 			}
 			String phone = request.getPhone();
 			if (!phone.equals(user.getPhone()) && userService.existsByPhone(phone)) {
-				return ResponseEntity.badRequest().body("Error: Phone is already taken!");
+				return ResponseEntity.badRequest().body(Constants.VALIDATION_PHONE_E002);
 			}
 			if (bindingResult.hasErrors()) {
 				return ResponseEntity.badRequest()
@@ -220,7 +221,7 @@ public class UserController {
 			user.setImage(image);
 
 			userService.updateProfile(user);
-			return AppUtils.returnJS(HttpStatus.OK, "Update user successfully!", null);
+			return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), null);
 		} catch (NotFoundException e) {
 			return AppUtils.returnJS(HttpStatus.NOT_FOUND, "User is unavaiable", null);
 		}
