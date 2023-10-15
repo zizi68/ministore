@@ -11,6 +11,7 @@ import com.moht1.webapi.payload.request.UpdateProfileRequest;
 import com.moht1.webapi.repository.UserRepository;
 import com.moht1.webapi.service.AddressService;
 import com.moht1.webapi.service.UserService;
+import com.moht1.webapi.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.InputStreamResource;
@@ -177,43 +178,43 @@ public class UserController {
         return ResponseEntity.ok(numOrd);
     }
 
-    @PutMapping(value = "edit-profile")
-    public ResponseEntity<?> editProfile(@Valid @RequestBody UpdateProfileRequest request,
-                                         BindingResult bindingResult) {
-        try {
-            User user = userService.findById(request.getId());
-            String username = request.getUsername();
-            if (!username.equals(user.getUsername()) && userService.existsByUsername(username)) {
-                return ResponseEntity.badRequest().body("Error: Username is already taken!");
-            }
-            String email = request.getEmail();
-            if (!email.equals(user.getEmail()) && userService.existsByEmail(email)) {
-                return ResponseEntity.badRequest().body("Error: Email is already taken!");
-            }
-            String phone = request.getPhone();
-            if (!phone.equals(user.getPhone()) && userService.existsByPhone(phone)) {
-                return ResponseEntity.badRequest().body("Error: Phone is already taken!");
-            }
-            if (bindingResult.hasErrors()) {
-                return ResponseEntity.badRequest()
-                        .body("Error: " + bindingResult.getAllErrors().get(0).getDefaultMessage());
-            }
-            String firstName = request.getFirstName();
-            String lastName = request.getLastName();
-            String image = request.getImage();
-            user.setUsername(username);
-            user.setFirstName(firstName);
-            user.setLastName(lastName);
-            user.setEmail(email);
-            user.setPhone(phone);
-            user.setImage(image);
+	@PutMapping(value = "edit-profile")
+	public ResponseEntity<?> editProfile(@Valid @RequestBody UpdateProfileRequest request,
+			BindingResult bindingResult) {
+		try {
+			User user = userService.findById(request.getId());
+			String username = request.getUsername();
+			if (!username.equals(user.getUsername()) && userService.existsByUsername(username)) {
+				return ResponseEntity.badRequest().body(Constants.VALIDATION_NAME_E002.getMessage());
+			}
+			String email = request.getEmail();
+			if (!email.equals(user.getEmail()) && userService.existsByEmail(email)) {
+				return ResponseEntity.badRequest().body(Constants.VALIDATION_EMAIL_E003.getMessage());
+			}
+			String phone = request.getPhone();
+			if (!phone.equals(user.getPhone()) && userService.existsByPhone(phone)) {
+				return ResponseEntity.badRequest().body(Constants.VALIDATION_PHONE_E002.getMessage());
+			}
+			if (bindingResult.hasErrors()) {
+				return ResponseEntity.badRequest()
+						.body(Constants.VALIDATION_EMAIL_E002.getMessage());
+			}
+			String firstName = request.getFirstName();
+			String lastName = request.getLastName();
+			String image = request.getImage();
+			user.setUsername(username);
+			user.setFirstName(firstName);
+			user.setLastName(lastName);
+			user.setEmail(email);
+			user.setPhone(phone);
+			user.setImage(image);
 
-            userService.updateProfile(user);
-            return AppUtils.returnJS(HttpStatus.OK, "Update user successfully!", null);
-        } catch (NotFoundException e) {
-            return AppUtils.returnJS(HttpStatus.NOT_FOUND, "User is unavaiable", null);
-        }
-    }
+			userService.updateProfile(user);
+			return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), null);
+		} catch (NotFoundException e) {
+			return AppUtils.returnJS(HttpStatus.NOT_FOUND, Constants.VALIDATION_EMAIL_E002.getMessage(), null);
+		}
+	}
 
     @PutMapping("change-password")
     public ResponseEntity<?> updatePassword(@Valid @RequestBody UpdatePasswordRequest request,

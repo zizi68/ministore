@@ -12,6 +12,7 @@ import com.moht1.webapi.repository.RoleRepository;
 import com.moht1.webapi.repository.UserRepository;
 import com.moht1.webapi.security.jwt.JwtUtils;
 import com.moht1.webapi.security.services.UserDetailsImpl;
+import com.moht1.webapi.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -50,97 +51,90 @@ public class AuthController {
 
     @Autowired
     JwtUtils jwtUtils;
+	
+	@PostMapping("/signin")
+	public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
+		Authentication authentication = authenticationManager.authenticate(
+				new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
+		SecurityContextHolder.getContext().setAuthentication(authentication);
+		String jwt = jwtUtils.generateJwtToken(authentication);
+		
+		UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
+		List<String> roles = userDetails.getAuthorities().stream()
+				.map(item -> item.getAuthority())
+				.collect(Collectors.toList());
+		return ResponseEntity.ok(new JwtResponse(jwt,
+												 userDetails.getId(), 
+												 userDetails.getUsername(), 
+												 userDetails.getEmail(), 
+												 roles));
+	}
+	
+	@PostMapping("/signup")
+	public ResponseEntity<ResponseObject> registerUser(@Valid @RequestBody SignupRequest signUpRequest) {
+		if (userRepository.existsByUsername(signUpRequest.getUsername())) {
+			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_NAME_E002.getMessage(), null);
+		}
+		if (signUpRequest.getPassword().trim().length() < 6 || signUpRequest.getPassword().trim().length() > 40) {
+			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_PASSWORD_E002.getMessage(), null);
+		}
+		if (userRepository.existsByEmail(signUpRequest.getEmail())) {
+			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_EMAIL_E002.getMessage(), null);
+		}
+		if (userRepository.existsByPhone(signUpRequest.getPhone())) {
+			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_PHONE_E002.getMessage(), null);
+		}
 
-    @PostMapping("/signin")
-    public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
-        try {
-            Authentication authentication = authenticationManager.authenticate(
-                    new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
+		// Create new user's account
+		User user = new User(signUpRequest.getUsername(),
+				 signUpRequest.getEmail(),
+				 encoder.encode(signUpRequest.getPassword()),signUpRequest.getPhone());;
 
-            SecurityContextHolder.getContext().setAuthentication(authentication);
-            String jwt = jwtUtils.generateJwtToken(authentication);
+		Set<String> strRoles = signUpRequest.getRole();
+		Set<Role> roles = new HashSet<>();
+		if (strRoles == null) {
+			Role userRole = roleRepository.findByName(ERole.ROLE_USER)
+					.orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
+			roles.add(userRole);
+		} else {
+			strRoles.forEach(role -> {
+				switch (role) {
+				case "admin":
+					Role adminRole = roleRepository.findByName(ERole.ROLE_ADMIN)
+							.orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
+					roles.add(adminRole);
+					break;
+				case "staff":
+					Role staffRole = roleRepository.findByName(ERole.ROLE_STAFF)
+							.orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
+					roles.add(staffRole);
+					break;
+				case "shipper":
+					Role shipperRole = roleRepository.findByName(ERole.ROLE_SHIPPER)
+							.orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
+					roles.add(shipperRole);
+					break;
+				default:
+					Role userRole = roleRepository.findByName(ERole.ROLE_USER)
+							.orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
+					roles.add(userRole);
+				}
+			});
+		}
+		user.setFirstName(signUpRequest.getFirstName());
+		user.setLastName(signUpRequest.getLastName());
+		user.setRoles(roles);
+		user.setStatus(true);
+		if (user.getImage() == null || user.getImage().isEmpty()) {
+			user.setImage("userDefaul.png");
+		}
 
-            UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
-            List<String> roles = userDetails.getAuthorities().stream()
-                    .map(item -> item.getAuthority())
-                    .collect(Collectors.toList());
-            return ResponseEntity.ok(new JwtResponse(jwt,
-                    userDetails.getId(),
-                    userDetails.getUsername(),
-                    userDetails.getEmail(),
-                    roles));
-        } catch (Exception e) {
-            return AppUtils.returnJS(HttpStatus.NOT_FOUND, "Login fail!", null);
-        }
-    }
-
-    @PostMapping("/signup")
-    public ResponseEntity<ResponseObject> registerUser(@Valid @RequestBody SignupRequest signUpRequest) {
-        if (userRepository.existsByUsername(signUpRequest.getUsername())) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User registered failed! " +
-                    "Username is already taken!", null);
-        }
-        if (userRepository.existsByEmail(signUpRequest.getEmail())) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User registered failed! " +
-                    "Email is already in use!", null);
-        }
-        if (userRepository.existsByPhone(signUpRequest.getPhone())) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User registered failed! " +
-                    "Phone is already in use!", null);
-        }
-
-        // Create new user's account
-        User user = new User(signUpRequest.getUsername(),
-                signUpRequest.getEmail(),
-                encoder.encode(signUpRequest.getPassword()), signUpRequest.getPhone());
-        ;
-
-        Set<String> strRoles = signUpRequest.getRole();
-        Set<Role> roles = new HashSet<>();
-        if (strRoles == null) {
-            Role userRole = roleRepository.findByName(ERole.ROLE_USER)
-                    .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
-            roles.add(userRole);
-        } else {
-            strRoles.forEach(role -> {
-                switch (role) {
-                    case "admin":
-                        Role adminRole = roleRepository.findByName(ERole.ROLE_ADMIN)
-                                .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
-                        roles.add(adminRole);
-                        break;
-                    case "staff":
-                        Role staffRole = roleRepository.findByName(ERole.ROLE_STAFF)
-                                .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
-                        roles.add(staffRole);
-                        break;
-                    case "shipper":
-                        Role shipperRole = roleRepository.findByName(ERole.ROLE_SHIPPER)
-                                .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
-                        roles.add(shipperRole);
-                        break;
-                    default:
-                        Role userRole = roleRepository.findByName(ERole.ROLE_USER)
-                                .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
-                        roles.add(userRole);
-                }
-            });
-        }
-        user.setFirstName(signUpRequest.getFirstName());
-        user.setLastName(signUpRequest.getLastName());
-        user.setRoles(roles);
-        user.setStatus(true);
-        if (user.getImage() == null || user.getImage().isEmpty()) {
-            user.setImage("userDefaul.png");
-        }
-
-        try {
-            User userUpdated = userRepository.save(user);
-            return AppUtils.returnJS(HttpStatus.OK, "User registered successfully!", userUpdated);
-        } catch (ConstraintViolationException e) {
-            // TODO: handle exception
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User registered failed!" +
-                    AppUtils.getExceptionSql(e), null);
+		try {
+			User userUpdated = userRepository.save(user);
+			return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), userUpdated);
+		} catch (ConstraintViolationException e) {
+			// TODO: handle exception
+			return AppUtils.returnJS(HttpStatus.BAD_REQUEST,  Constants.VALIDATION_EMAIL_E002.getMessage(), null);
 
         }
     }

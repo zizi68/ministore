@@ -34,6 +34,7 @@ import com.ministore.android.model.SignupRequest;
 import com.ministore.android.model.UpdateProfileRequest;
 import com.ministore.android.model.User;
 import com.ministore.android.response.ResponseBody;
+import com.ministore.android.util.Constants;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
@@ -88,7 +89,7 @@ public class ProfileActivity extends AppCompatActivity {
         String phone = edtPhone.getText().toString().trim();
 
         if (username.isEmpty() || firstName.isEmpty() || lastName.isEmpty() || email.isEmpty() || phone.isEmpty()) {
-            showMessage("Please enter all field!");
+            showMessage(Constants.VALIDATION_INFO_E001.getMessage());
             return;
         }
 
@@ -124,7 +125,7 @@ public class ProfileActivity extends AppCompatActivity {
                             return;
                         }
                         if (!response.isSuccessful()) {
-                            showMessage("Update failed!\n" + response.message());
+                            showMessage(Constants.VALIDATION_FAIL.getMessage() + response.message());
                             return;
                         }
                         showMessage(response.body());
