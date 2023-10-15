@@ -51,90 +51,91 @@ public class AuthController {
 
     @Autowired
     JwtUtils jwtUtils;
-	
-	@PostMapping("/signin")
-	public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
-		Authentication authentication = authenticationManager.authenticate(
-				new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
-		SecurityContextHolder.getContext().setAuthentication(authentication);
-		String jwt = jwtUtils.generateJwtToken(authentication);
-		
-		UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
-		List<String> roles = userDetails.getAuthorities().stream()
-				.map(item -> item.getAuthority())
-				.collect(Collectors.toList());
-		return ResponseEntity.ok(new JwtResponse(jwt,
-												 userDetails.getId(), 
-												 userDetails.getUsername(), 
-												 userDetails.getEmail(), 
-												 roles));
-	}
-	
-	@PostMapping("/signup")
-	public ResponseEntity<ResponseObject> registerUser(@Valid @RequestBody SignupRequest signUpRequest) {
-		if (userRepository.existsByUsername(signUpRequest.getUsername())) {
-			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_NAME_E002.getMessage(), null);
-		}
-		if (signUpRequest.getPassword().trim().length() < 6 || signUpRequest.getPassword().trim().length() > 40) {
-			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_PASSWORD_E002.getMessage(), null);
-		}
-		if (userRepository.existsByEmail(signUpRequest.getEmail())) {
-			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_EMAIL_E002.getMessage(), null);
-		}
-		if (userRepository.existsByPhone(signUpRequest.getPhone())) {
-			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_PHONE_E002.getMessage(), null);
-		}
 
-		// Create new user's account
-		User user = new User(signUpRequest.getUsername(),
-				 signUpRequest.getEmail(),
-				 encoder.encode(signUpRequest.getPassword()),signUpRequest.getPhone());;
+    @PostMapping("/signin")
+    public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
+        Authentication authentication = authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+        String jwt = jwtUtils.generateJwtToken(authentication);
 
-		Set<String> strRoles = signUpRequest.getRole();
-		Set<Role> roles = new HashSet<>();
-		if (strRoles == null) {
-			Role userRole = roleRepository.findByName(ERole.ROLE_USER)
-					.orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
-			roles.add(userRole);
-		} else {
-			strRoles.forEach(role -> {
-				switch (role) {
-				case "admin":
-					Role adminRole = roleRepository.findByName(ERole.ROLE_ADMIN)
-							.orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
-					roles.add(adminRole);
-					break;
-				case "staff":
-					Role staffRole = roleRepository.findByName(ERole.ROLE_STAFF)
-							.orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
-					roles.add(staffRole);
-					break;
-				case "shipper":
-					Role shipperRole = roleRepository.findByName(ERole.ROLE_SHIPPER)
-							.orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
-					roles.add(shipperRole);
-					break;
-				default:
-					Role userRole = roleRepository.findByName(ERole.ROLE_USER)
-							.orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
-					roles.add(userRole);
-				}
-			});
-		}
-		user.setFirstName(signUpRequest.getFirstName());
-		user.setLastName(signUpRequest.getLastName());
-		user.setRoles(roles);
-		user.setStatus(true);
-		if (user.getImage() == null || user.getImage().isEmpty()) {
-			user.setImage("userDefaul.png");
-		}
+        UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
+        List<String> roles = userDetails.getAuthorities().stream()
+                .map(item -> item.getAuthority())
+                .collect(Collectors.toList());
+        return ResponseEntity.ok(new JwtResponse(jwt,
+                userDetails.getId(),
+                userDetails.getUsername(),
+                userDetails.getEmail(),
+                roles));
+    }
 
-		try {
-			User userUpdated = userRepository.save(user);
-			return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), userUpdated);
-		} catch (ConstraintViolationException e) {
-			// TODO: handle exception
-			return AppUtils.returnJS(HttpStatus.BAD_REQUEST,  Constants.VALIDATION_EMAIL_E002.getMessage(), null);
+    @PostMapping("/signup")
+    public ResponseEntity<ResponseObject> registerUser(@Valid @RequestBody SignupRequest signUpRequest) {
+        if (userRepository.existsByUsername(signUpRequest.getUsername())) {
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_NAME_E002.getMessage(), null);
+        }
+        if (signUpRequest.getPassword().trim().length() < 6 || signUpRequest.getPassword().trim().length() > 40) {
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_PASSWORD_E002.getMessage(), null);
+        }
+        if (userRepository.existsByEmail(signUpRequest.getEmail())) {
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_EMAIL_E002.getMessage(), null);
+        }
+        if (userRepository.existsByPhone(signUpRequest.getPhone())) {
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_PHONE_E002.getMessage(), null);
+        }
+
+        // Create new user's account
+        User user = new User(signUpRequest.getUsername(),
+                signUpRequest.getEmail(),
+                encoder.encode(signUpRequest.getPassword()), signUpRequest.getPhone());
+        ;
+
+        Set<String> strRoles = signUpRequest.getRole();
+        Set<Role> roles = new HashSet<>();
+        if (strRoles == null) {
+            Role userRole = roleRepository.findByName(ERole.ROLE_USER)
+                    .orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
+            roles.add(userRole);
+        } else {
+            strRoles.forEach(role -> {
+                switch (role) {
+                    case "admin":
+                        Role adminRole = roleRepository.findByName(ERole.ROLE_ADMIN)
+                                .orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
+                        roles.add(adminRole);
+                        break;
+                    case "staff":
+                        Role staffRole = roleRepository.findByName(ERole.ROLE_STAFF)
+                                .orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
+                        roles.add(staffRole);
+                        break;
+                    case "shipper":
+                        Role shipperRole = roleRepository.findByName(ERole.ROLE_SHIPPER)
+                                .orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
+                        roles.add(shipperRole);
+                        break;
+                    default:
+                        Role userRole = roleRepository.findByName(ERole.ROLE_USER)
+                                .orElseThrow(() -> new RuntimeException(Constants.ROLE_404.getMessage()));
+                        roles.add(userRole);
+                }
+            });
+        }
+        user.setFirstName(signUpRequest.getFirstName());
+        user.setLastName(signUpRequest.getLastName());
+        user.setRoles(roles);
+        user.setStatus(true);
+        if (user.getImage() == null || user.getImage().isEmpty()) {
+            user.setImage("userDefaul.png");
+        }
+
+        try {
+            User userUpdated = userRepository.save(user);
+            return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), userUpdated);
+        } catch (ConstraintViolationException e) {
+            // TODO: handle exception
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_EMAIL_E002.getMessage(), null);
 
         }
     }

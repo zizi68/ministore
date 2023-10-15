@@ -1,10 +1,5 @@
 package com.moht1.webapi.Exception;
 
-import java.util.Set;
-
-import javax.validation.ConstraintViolation;
-import javax.validation.ConstraintViolationException;
-
 import com.moht1.webapi.util.Constants;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
