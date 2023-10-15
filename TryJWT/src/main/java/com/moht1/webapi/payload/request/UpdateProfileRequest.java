@@ -1,13 +1,12 @@
 package com.moht1.webapi.payload.request;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.Column;
-import javax.persistence.Id;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
-
-import lombok.Getter;
-import lombok.Setter;
 
 @Getter
 @Setter
@@ -15,35 +14,35 @@ import lombok.Setter;
 @lombok.AllArgsConstructor
 @lombok.NoArgsConstructor
 public class UpdateProfileRequest {
-	
-	private Integer id;
-	
-	@NotBlank
-	@Size(max = 20)
-	private String username;
-	
-	@NotBlank
-	@Size(max = 50)
-	@Email
-	private String email;
 
-	@Size(max = 120)
-	private String firstName;
+    private Integer id;
 
-	@Size(max = 120)
-	private String lastName;
+    @NotBlank
+    @Size(max = 20)
+    private String username;
 
-	public UpdateProfileRequest(@NotBlank @Size(max = 20) String username, 
-			@NotBlank @Size(max = 50) @Email String email, @Size(max = 15) String phone) {
-		super();
-		this.username = username;
-		this.email = email;
-		this.phone = phone;
-	}
+    @NotBlank
+    @Size(max = 50)
+    @Email
+    private String email;
 
-	@Column(length = 10, unique = true)
-	private String phone;
+    @Size(max = 120)
+    private String firstName;
 
-	@Column(name = "image", length = 300)
-	private String image;
+    @Size(max = 120)
+    private String lastName;
+
+    public UpdateProfileRequest(@NotBlank @Size(max = 20) String username,
+                                @NotBlank @Size(max = 50) @Email String email, @Size(max = 15) String phone) {
+        super();
+        this.username = username;
+        this.email = email;
+        this.phone = phone;
+    }
+
+    @Column(length = 10, unique = true)
+    private String phone;
+
+    @Column(name = "image", length = 300)
+    private String image;
 }

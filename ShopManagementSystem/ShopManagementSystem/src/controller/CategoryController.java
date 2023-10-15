@@ -22,7 +22,7 @@ import utils.ConnectAPI;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class CategoryController extends BaseController {
     private String getMostPurchased;

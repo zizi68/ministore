@@ -10,7 +10,7 @@ import model.Product;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class ProductOutput {
 

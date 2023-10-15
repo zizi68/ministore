@@ -31,9 +31,13 @@ public class LoginController extends BaseController {
         Login output = null;
         try {
             Response response = ConnectAPI.excuteHttpMethod(json, login, "POST", false);
+            if (response.getResponseCode() == 404) {
+                return null;
+            }
             output = gson.fromJson(response.getMessage(), Login.class);
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
+            return null;
         }
 
         return output;

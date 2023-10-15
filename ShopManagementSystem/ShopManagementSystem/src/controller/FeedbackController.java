@@ -18,7 +18,7 @@ import utils.ConnectAPI;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class FeedbackController extends BaseController{
 

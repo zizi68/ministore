@@ -1,20 +1,19 @@
 package com.moht1.webapi.serviceImpl;
 
-import java.util.List;
-
 import com.moht1.webapi.model.Poster;
+import com.moht1.webapi.repository.PosterRepository;
+import com.moht1.webapi.service.PosterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.moht1.webapi.repository.PosterRepository;
-import com.moht1.webapi.service.PosterService;
+import java.util.List;
 
 @Service
 public class PosterServiceImpl implements PosterService {
-	
-	@Autowired
-	private PosterRepository posterRepository;
-	
+
+    @Autowired
+    private PosterRepository posterRepository;
+
 //	public List<PosterDTO> getListPosterDTO() {
 //		List<Poster> posters = posterRepository.findAll();
 //		List<PosterDTO> list = new ArrayList<PosterDTO>();
@@ -28,24 +27,24 @@ public class PosterServiceImpl implements PosterService {
 //		return list;
 //	}
 
-	@Override
-	public List<Poster> getListPoster() {
-		return posterRepository.findAll();
-	}
+    @Override
+    public List<Poster> getListPoster() {
+        return posterRepository.findAll();
+    }
 
-	@Override
-	public Poster savePoster(Poster poster) {
-		return posterRepository.save(poster);
-	}
+    @Override
+    public Poster savePoster(Poster poster) {
+        return posterRepository.save(poster);
+    }
 
-	@Override
-	public void deletePoster(Integer id) {
-		Poster poster = posterRepository.getById(id);
-		posterRepository.delete(poster);
-	}
+    @Override
+    public void deletePoster(Integer id) {
+        Poster poster = posterRepository.getById(id);
+        posterRepository.delete(poster);
+    }
 
-	@Override
-	public Poster getPosterById(Integer id) {
-		return posterRepository.getById(id);
-	}
+    @Override
+    public Poster getPosterById(Integer id) {
+        return posterRepository.getById(id);
+    }
 }

@@ -10,7 +10,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ResponseBody {
-	private int code;
-	private String message;
-	private Object data;
+    private int code;
+    private String message;
+    private Object data;
 }

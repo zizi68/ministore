@@ -1,16 +1,18 @@
 package com.moht1.webapi.payload.request;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-@lombok.AllArgsConstructor
-@lombok.NoArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 public class CartRequest {
 
-	private Integer productId;
-	private Integer userId;
-	private int quantity;
-	
+    private Integer productId;
+    private Integer userId;
+    private int quantity;
+
 }

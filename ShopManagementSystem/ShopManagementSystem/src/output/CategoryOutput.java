@@ -10,7 +10,7 @@ import model.Category;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class CategoryOutput {
 

@@ -8,7 +8,7 @@ import java.util.Set;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class Login {
     private Integer id;
@@ -127,6 +127,10 @@ public class Login {
     public void setAccessToken(String accessToken) {
         this.accessToken = accessToken;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Login{" + "id=" + id + ", username=" + username + ", password=" + password + ", firstName=" + firstName + ", lastName=" + lastName + ", image=" + image + ", email=" + email + ", phone=" + phone + ", roles=" + roles + ", tokenType=" + tokenType + ", accessToken=" + accessToken + '}';
+    }
     
 }

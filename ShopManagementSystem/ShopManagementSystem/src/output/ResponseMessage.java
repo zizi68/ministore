@@ -6,7 +6,7 @@ package output;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class ResponseMessage {
     private String message;

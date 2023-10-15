@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class Feedback {
 

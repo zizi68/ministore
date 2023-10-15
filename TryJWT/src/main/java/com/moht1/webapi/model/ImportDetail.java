@@ -1,17 +1,11 @@
 package com.moht1.webapi.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "import_detail")
@@ -20,21 +14,21 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ImportDetail {
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
 
-	@ManyToOne
-	@JoinColumn(name = "product_id")
-	private Product product;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
-	@ManyToOne
-	@JoinColumn(name = "import_id")
-	private Import imports;
+    @ManyToOne
+    @JoinColumn(name = "product_id")
+    private Product product;
 
-	private int quantity;
+    @ManyToOne
+    @JoinColumn(name = "import_id")
+    private Import imports;
 
-	private float price;
-	
+    private int quantity;
+
+    private float price;
+
 }

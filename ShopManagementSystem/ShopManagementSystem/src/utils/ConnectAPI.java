@@ -16,7 +16,7 @@ import model.Response;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class ConnectAPI {
 
@@ -49,6 +49,7 @@ public class ConnectAPI {
         if ((responseCode >= 200) && (responseCode <= 202)) {
             in = new BufferedReader(new InputStreamReader(con.getInputStream()));
         } else {
+            System.out.println(con.getErrorStream());
             in = new BufferedReader(new InputStreamReader(con.getErrorStream()));
         }
         String inputLine;

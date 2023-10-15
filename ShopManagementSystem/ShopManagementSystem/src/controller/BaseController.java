@@ -11,7 +11,7 @@ import output.ResponseMessage;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class BaseController {
 

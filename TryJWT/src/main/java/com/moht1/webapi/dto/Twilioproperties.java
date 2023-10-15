@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Twilioproperties{
+public class Twilioproperties {
 
     private String OTP;
 

@@ -24,7 +24,7 @@ import utils.ConnectAPI;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class UserController extends BaseController {
 

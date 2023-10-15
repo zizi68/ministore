@@ -10,8 +10,8 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class MyItem {
-	
-	private String label;
-	private Long value;
+
+    private String label;
+    private Long value;
 
 }

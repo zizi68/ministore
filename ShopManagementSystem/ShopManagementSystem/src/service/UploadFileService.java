@@ -13,7 +13,7 @@ import retrofit2.http.Part;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public interface UploadFileService {
 

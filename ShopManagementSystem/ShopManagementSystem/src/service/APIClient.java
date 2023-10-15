@@ -15,7 +15,7 @@ import utils.ConnectAPI;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class APIClient {
 

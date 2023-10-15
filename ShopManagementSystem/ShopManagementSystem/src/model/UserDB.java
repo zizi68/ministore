@@ -8,7 +8,7 @@ import java.util.Set;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class UserDB {
 

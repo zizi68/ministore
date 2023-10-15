@@ -10,7 +10,7 @@ import model.Brand;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class BrandOutput {
 

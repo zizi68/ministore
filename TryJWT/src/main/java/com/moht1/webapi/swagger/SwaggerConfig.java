@@ -2,7 +2,6 @@ package com.moht1.webapi.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
@@ -14,20 +13,20 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
-	
-	@Bean
-    public Docket api() { 
-        return new Docket(DocumentationType.SWAGGER_2).groupName("public-api")  
-        		.apiInfo(apiInfo())
-        		.select()                                  
-        		.apis(RequestHandlerSelectors.basePackage("com.Quan.TryJWT.controller"))              
-        		.build();                                           
+
+    @Bean
+    public Docket api() {
+        return new Docket(DocumentationType.SWAGGER_2).groupName("public-api")
+                .apiInfo(apiInfo())
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("com.Quan.TryJWT.controller"))
+                .build();
     }
-	
-	private ApiInfo apiInfo() {
-		return new ApiInfoBuilder().title("MiniStore API")
-				.description("MiniStore API reference for developers")
-				.termsOfServiceUrl("https://www.ministore.com")
-				.licenseUrl("ministore@gmail.com").version("1.0").build();
-	}
+
+    private ApiInfo apiInfo() {
+        return new ApiInfoBuilder().title("MiniStore API")
+                .description("MiniStore API reference for developers")
+                .termsOfServiceUrl("https://www.ministore.com")
+                .licenseUrl("ministore@gmail.com").version("1.0").build();
+    }
 }

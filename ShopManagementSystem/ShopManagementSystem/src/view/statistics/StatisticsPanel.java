@@ -42,7 +42,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
     private DefaultTableModel dtmCategory;
     private DefaultTableModel dtmBrand;
     private SimpleDateFormat sdf;
-    
+
     public StatisticsPanel() {
         initComponents();
         setDefaultTableHeader(jTable_ByDateDetail);
@@ -50,9 +50,9 @@ public class StatisticsPanel extends javax.swing.JPanel {
         setDefaultTableHeader(jTable_ByYearDetail);
         setDefaultTableHeader(JTable_Category);
         setDefaultTableHeader(JTable_Brand);
-        
+
         sdf = new SimpleDateFormat("dd-MM-yyyy");
-        
+
         dtmDate = (DefaultTableModel) jTable_ByDateDetail.getModel();
         dtmMonth = (DefaultTableModel) jTable_ByMonthDetail.getModel();
         dtmYear = (DefaultTableModel) jTable_ByYearDetail.getModel();
@@ -61,8 +61,8 @@ public class StatisticsPanel extends javax.swing.JPanel {
         rc = new ReportController();
         cc = new CategoryController();
         bc = new BrandController();
-        uc =  new UserController();
-        
+        uc = new UserController();
+
         int year = Calendar.getInstance().get(Calendar.YEAR);
         Date date1 = subDays(new Date(), 7);
         Date date2 = new Date();
@@ -73,40 +73,39 @@ public class StatisticsPanel extends javax.swing.JPanel {
         rc.setDataToBarChart(jPanel_ByYearChart, dtmYear, "year", "Year", "Revenue", (year - 7) + "", year + "");
         rc.setCategoryToPieChart(jPanel_CategoryChart, dtmCategory, cc.getMostPurchased());
         rc.setBrandToPieChart(jPanel_BrandChart, dtmBrand, bc.getMostPurchased());
-        
+
         sumRevenue("date");
         sumRevenue("month");
         sumRevenue("year");
-        
+
         jYearChooser_ByMonth.setValue(year);
         jYearChooser_ByYearFrom.setValue(year - 7);
         jYearChooser_ByYearTo.setValue(year);
     }
-    
+
     public Date subDays(Date date, int days) {
         GregorianCalendar cal = new GregorianCalendar();
         cal.setTime(date);
         cal.add(Calendar.DATE, -days);
         return cal.getTime();
-	}
-    
-    private void sumRevenue (String type)
-    {
-        if(type.equalsIgnoreCase("date")){
+    }
+
+    private void sumRevenue(String type) {
+        if (type.equalsIgnoreCase("date")) {
             jLabel_ByDateRevenue.setText(rc.numberFormat.format(rc.sumColumn(jTable_ByDateDetail, 1)));
             jLabel_ByDateFunds.setText(rc.numberFormat.format(rc.sumColumn(jTable_ByDateDetail, 2)));
             jLabel_ByDateReturn.setText(rc.numberFormat.format(rc.sumColumn(jTable_ByDateDetail, 3)));
             jLabel_ByDateProfit.setText(rc.numberFormat.format(rc.sumColumn(jTable_ByDateDetail, 4)));
         }
-        
-        if(type.equalsIgnoreCase("month")){
+
+        if (type.equalsIgnoreCase("month")) {
             jLabel_ByMonthRevenue.setText(rc.numberFormat.format(rc.sumColumn(jTable_ByMonthDetail, 1)));
             jLabel_ByMonthFunds.setText(rc.numberFormat.format(rc.sumColumn(jTable_ByMonthDetail, 2)));
             jLabel_ByMonthReturn.setText(rc.numberFormat.format(rc.sumColumn(jTable_ByMonthDetail, 3)));
             jLabel_ByMonthProfit.setText(rc.numberFormat.format(rc.sumColumn(jTable_ByMonthDetail, 4)));
         }
-        
-        if(type.equalsIgnoreCase("year")){
+
+        if (type.equalsIgnoreCase("year")) {
             jLabel_ByYearRevenue.setText(rc.numberFormat.format(rc.sumColumn(jTable_ByYearDetail, 1)));
             jLabel_ByYearFunds.setText(rc.numberFormat.format(rc.sumColumn(jTable_ByYearDetail, 2)));
             jLabel_ByYearReturn.setText(rc.numberFormat.format(rc.sumColumn(jTable_ByYearDetail, 3)));
@@ -1305,8 +1304,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
             java.io.File file = fileChooser.getSelectedFile();
             File.xuatFileExcel("MostPurchasedCategory", (DefaultTableModel) JTable_Category.getModel(), file.getAbsolutePath() + "/MostPurchasedCategory");
             JOptionPane.showMessageDialog(this, "Xuất file excel thành công!");
-        }
-        else {
+        } else {
             return;
         }
     }//GEN-LAST:event_jButton_ExportExcelCategoryActionPerformed
@@ -1321,8 +1319,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
             java.io.File file = fileChooser.getSelectedFile();
             File.xuatFileExcel("RevenueStatisticByYear", (DefaultTableModel) jTable_ByYearDetail.getModel(), file.getAbsolutePath() + "/RevenueStatisticByYear");
             JOptionPane.showMessageDialog(this, "Export excel file succesfully!");
-        }
-        else {
+        } else {
             return;
         }
     }//GEN-LAST:event_jButton_ByYearExportActionPerformed
@@ -1331,7 +1328,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         int year1 = jYearChooser_ByYearFrom.getValue();
         int year2 = jYearChooser_ByYearTo.getValue();
-        if(year1 > year2) {
+        if (year1 > year2) {
             JOptionPane.showMessageDialog(this, "End year should be greater or equal start year");
             return;
         }
@@ -1359,8 +1356,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
             java.io.File file = fileChooser.getSelectedFile();
             File.xuatFileExcel("RevenueStatisticByMonth", (DefaultTableModel) jTable_ByMonthDetail.getModel(), file.getAbsolutePath() + "/RevenueStatisticByMonth");
             JOptionPane.showMessageDialog(this, "Export excel file succesfully!");
-        }
-        else {
+        } else {
             return;
         }
     }//GEN-LAST:event_jButton_ByMonthExportActionPerformed
@@ -1376,14 +1372,14 @@ public class StatisticsPanel extends javax.swing.JPanel {
         Date date1 = jDateChooser_StartDate.getDate();
         Date date2 = jDateChooser_EndDate.getDate();
 
-        if(date1.compareTo(date2) > 0) {
+        if (date1.compareTo(date2) > 0) {
             JOptionPane.showMessageDialog(this, "Finish date should be greater than or equal Start date");
             return;
         }
-        
-        rc.setDataToBarChart(jPanel_ByDateChart, dtmDate, "date", "Date", "Revenue", sdf.format(date1), sdf.format(date2));        
+
+        rc.setDataToBarChart(jPanel_ByDateChart, dtmDate, "date", "Date", "Revenue", sdf.format(date1), sdf.format(date2));
         sumRevenue("date");
-        
+
     }//GEN-LAST:event_jButton_OK1ActionPerformed
 
     private void jButton_ByYearExport1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ByYearExport1ActionPerformed
@@ -1396,8 +1392,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
             java.io.File file = fileChooser.getSelectedFile();
             File.xuatFileExcel("RevenueStatisticByDate", (DefaultTableModel) jTable_ByDateDetail.getModel(), file.getAbsolutePath() + "/RevenueStatisticByDate");
             JOptionPane.showMessageDialog(this, "Export excel file succesfully!");
-        }
-        else {
+        } else {
             return;
         }
     }//GEN-LAST:event_jButton_ByYearExport1ActionPerformed
@@ -1412,8 +1407,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
             java.io.File file = fileChooser.getSelectedFile();
             File.xuatFileExcel("MostPurchasedBrand", (DefaultTableModel) JTable_Brand.getModel(), file.getAbsolutePath() + "/MostPurchasedBrand");
             JOptionPane.showMessageDialog(this, "Xuất file excel thành công!");
-        }
-        else {
+        } else {
             return;
         }
     }//GEN-LAST:event_jButton_ExportExcelBrandActionPerformed
@@ -1422,13 +1416,13 @@ public class StatisticsPanel extends javax.swing.JPanel {
         SimpleDateFormat dateFormatter = new SimpleDateFormat("dd/MM/yyyy");
         Date startDate = new Date();
         String strStartDate = dateFormatter.format(startDate);
-        
-        return "Reporter: " + uc.getUserById(String.valueOf(LoginFrame.userID)).getFirstName() + "\n" +
-        "Email: " + LoginFrame.Email + "\n" +
-        "Phone number: " + LoginFrame.PhoneNumber + "\n" +
-        "Report date: " + strStartDate + "\n";
+
+        return "Reporter: " + uc.getUserById(String.valueOf(LoginFrame.userID)).getFirstName() + "\n"
+                + "Email: " + LoginFrame.Email + "\n"
+                + "Phone number: " + LoginFrame.PhoneNumber + "\n"
+                + "Report date: " + strStartDate + "\n";
     }
-    
+
     private void jButton_ByMonthExportPDFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ByMonthExportPDFActionPerformed
         // TODO add your handling code here:
         File.xuatFilePDF("ReportByMonth" + jYearChooser_ByMonth.getValue(), "REPORT BY MONTH IN YEAR " + jYearChooser_ByMonth.getValue(), getReportInformation(), dtmMonth);
@@ -1445,7 +1439,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
         String endDate = sdf.format(jDateChooser_EndDate.getDate());
         File.xuatFilePDF("ReportByYear" + startDate + "-" + endDate, "REPORT FROM DATE " + startDate + " - " + endDate, getReportInformation(), dtmDate);
     }//GEN-LAST:event_jButton_ByDateExportPDFActionPerformed
-    
+
     public static void setDefaultTableHeader(JTable table) {
         DefaultTableCellRenderer defaultTableCellRenderer;
         table.setRowHeight(30);
@@ -1454,7 +1448,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
         table.getTableHeader().setFont(new Font("Segoe UI", 1, 15));
         table.setFont(new java.awt.Font("Segoe UI", 0, 15));
     }
-    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable JTable_Brand;

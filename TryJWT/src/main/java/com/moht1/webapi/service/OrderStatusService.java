@@ -4,5 +4,5 @@ import com.moht1.webapi.model.OrderStatus;
 
 public interface OrderStatusService {
 
-	public OrderStatus findById(Integer id);
+    public OrderStatus findById(Integer id);
 }

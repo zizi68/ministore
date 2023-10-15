@@ -1,7 +1,6 @@
 package com.moht1.webapi.dto;
 
 import com.moht1.webapi.model.User;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,11 +12,11 @@ import lombok.Setter;
 @NoArgsConstructor
 public class FullCart {
 
-	private Integer id;
+    private Integer id;
 
-	private FullProduct product;
+    private FullProduct product;
 
-	private User user;
+    private User user;
 
-	private int quantity;
+    private int quantity;
 }

@@ -7,9 +7,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface FeedbackRepository extends JpaRepository<Feedback, FeedbackId>{
-//	List<Feedback> findAllByProduct(Product product);
+public interface FeedbackRepository extends JpaRepository<Feedback, FeedbackId> {
+    //	List<Feedback> findAllByProduct(Product product);
 //	public Feedback findByUserAndProduct(User user, Product product);
-	public Feedback findByOrderDetail(OrderDetail orderDetail);
-	
+    public Feedback findByOrderDetail(OrderDetail orderDetail);
+
 }

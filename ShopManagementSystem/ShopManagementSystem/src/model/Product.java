@@ -6,7 +6,7 @@ package model;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class Product {
 

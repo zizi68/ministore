@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 public class PosterDTO {
 
-	private String name;
-	private int type;
-	
+    private String name;
+    private int type;
+
 }

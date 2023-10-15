@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  *
- * @author TRINH
+ * @author MO
  */
 public class Category {
 

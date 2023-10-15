@@ -10,14 +10,14 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ProductDTO {
-	private String name;
-	private String description;
-	private String image;
-	private float price;
-	private String specification;
-	private int discount;
-	private int soldQuantity;
-	private int quantity;
-	private String category;
-	private String brand;
+    private String name;
+    private String description;
+    private String image;
+    private float price;
+    private String specification;
+    private int discount;
+    private int soldQuantity;
+    private int quantity;
+    private String category;
+    private String brand;
 }

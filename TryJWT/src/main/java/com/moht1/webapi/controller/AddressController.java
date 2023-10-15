@@ -1,10 +1,7 @@
 package com.moht1.webapi.controller;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.validation.Valid;
-
+import com.moht1.webapi.Exception.AppUtils;
+import com.moht1.webapi.model.*;
 import com.moht1.webapi.repository.DistrictRepository;
 import com.moht1.webapi.repository.ProvinceRepository;
 import com.moht1.webapi.repository.UserRepository;
@@ -15,22 +12,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import com.moht1.webapi.Exception.AppUtils;
-import com.moht1.webapi.model.Address;
-import com.moht1.webapi.model.District;
-import com.moht1.webapi.model.Province;
-import com.moht1.webapi.model.User;
-import com.moht1.webapi.model.Ward;
+import javax.validation.Valid;
+import java.util.ArrayList;
+import java.util.List;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
@@ -78,7 +64,7 @@ public class AddressController {
 	public ResponseEntity<?> addAddressToUser(@PathVariable("userId") Integer id, @Valid @RequestBody Address address, BindingResult bindingResult) {
     	User user = userService.findById(id);
     	if (user == null) {
-    		return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User not found!", null);
+			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User not found!", null);
 		}
 		if (bindingResult.hasErrors()) {
 			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, bindingResult.getAllErrors().get(0).getDefaultMessage(), null);

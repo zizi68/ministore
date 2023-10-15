@@ -1,43 +1,42 @@
 package com.moht1.webapi.model;
 
-import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import java.io.Serializable;
 
 @Embeddable
 public class FeedbackId implements Serializable {
-	
-	@Column(name = "user_id")
-	private Integer userId;
 
-	@Column(name = "product_id")
-	private Integer productId;
-	
-	public FeedbackId() {
-		super();
-	}
+    @Column(name = "user_id")
+    private Integer userId;
 
-	public FeedbackId(Integer userId, Integer productId) {
-		super();
-		this.userId = userId;
-		this.productId = productId;
-	}
+    @Column(name = "product_id")
+    private Integer productId;
 
-	public Integer getUserId() {
-		return userId;
-	}
+    public FeedbackId() {
+        super();
+    }
 
-	public void setUserId(Integer userId) {
-		this.userId = userId;
-	}
+    public FeedbackId(Integer userId, Integer productId) {
+        super();
+        this.userId = userId;
+        this.productId = productId;
+    }
 
-	public Integer getProductId() {
-		return productId;
-	}
+    public Integer getUserId() {
+        return userId;
+    }
 
-	public void setProductId(Integer productId) {
-		this.productId = productId;
-	}
-	
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
+    public Integer getProductId() {
+        return productId;
+    }
+
+    public void setProductId(Integer productId) {
+        this.productId = productId;
+    }
+
 }

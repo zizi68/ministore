@@ -1,15 +1,14 @@
 package com.moht1.webapi.Exception;
 
-import java.util.Set;
-
-import javax.validation.ConstraintViolation;
-import javax.validation.ConstraintViolationException;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
+import javax.validation.ConstraintViolation;
+import javax.validation.ConstraintViolationException;
+import java.util.Set;
+
 public class AppUtils {
-	public static String getExceptionSql(ConstraintViolationException e){
+    public static String getExceptionSql(ConstraintViolationException e) {
         Set<ConstraintViolation<?>> violations = e.getConstraintViolations();
         String errorMessage = "";
         if (!violations.isEmpty()) {
@@ -25,9 +24,9 @@ public class AppUtils {
 
         }
         return errorMessage;
-}
+    }
 
-	public static ResponseEntity<ResponseObject> returnJS(HttpStatus httpStatus, String message, Object object) {
+    public static ResponseEntity<ResponseObject> returnJS(HttpStatus httpStatus, String message, Object object) {
 
         return ResponseEntity.status(httpStatus)
                 .body(new ResponseObject(message, object));
