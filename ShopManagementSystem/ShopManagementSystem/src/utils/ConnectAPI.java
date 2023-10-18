@@ -20,7 +20,7 @@ import model.Response;
  */
 public class ConnectAPI {
 
-    public static final String LOCALHOST = "http://localhost:80";
+    public static final String LOCALHOST = "http://localhost:8000";
     public static String tokenType;
     public static String accessToken;
 
