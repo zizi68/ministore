@@ -100,7 +100,6 @@ public class OrderController {
                                                @RequestParam(value = "payment", required = false) Optional<String> payment) {
         Order order = null;
 
-
         order = orderService.findById(id);
 
         if (order == null)

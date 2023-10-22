@@ -35,10 +35,14 @@ public class OrderDetailServiceImpl implements OrderDetailService {
 
     @Override
     public boolean updateSoldQuantityByOrderDetail(List<OrderDetail> orderDetails, int type) {
-        /***
+        /**
          * type = 1: cộng thêm vào số lượng bán
          * type = 2: trừ bớt số lượng bán
-         */
+         **/
+        /**
+         * Nếu sàn phẩm này có số lượng bán bằng số lượng sản phẩm tức là đã bán hết rồi,
+         * quantity không bị trừ khi sản phẩm được bán mà khi sản phẩm được bán thì xử lý là số lượng bán tăng lên
+         **/
         if (type == 1) {
             for (OrderDetail item : orderDetails) {
                 Product product = item.getProduct();

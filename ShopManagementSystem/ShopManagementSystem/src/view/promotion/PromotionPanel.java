@@ -7,6 +7,7 @@ package view.promotion;
 import view.imports.*;
 import controller.ImportsController;
 import controller.PromotionController;
+import java.util.Date;
 import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
@@ -531,6 +532,13 @@ public class PromotionPanel extends javax.swing.JPanel {
 
     private void jButton_ApplyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ApplyActionPerformed
         // TODO add your handling code here:
+        Date date1 = jDateChooser_StartDate.getDate();
+        Date date2 = jDateChooser_FinishDate.getDate();
+
+        if (date1.compareTo(date2) > 0) {
+            JOptionPane.showMessageDialog(this, "Finish date should be greater than or equal Start date");
+            return;
+        }
         jRadioButton_All.setSelected(true);
         List<Promotion> list = prc.searchPromotions(jDateChooser_StartDate.getDate(), jDateChooser_FinishDate.getDate());
         prc.loadTable(list, dtmPromotion);
