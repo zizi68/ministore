@@ -20,7 +20,7 @@ import model.Response;
  */
 public class ConnectAPI {
 
-    public static final String LOCALHOST = "http://localhost:8000";
+    public static final String LOCALHOST = "https://9360-2405-4803-c87b-e660-ecf8-7b22-ad6c-6e8c.ngrok-free.app";
     public static String tokenType;
     public static String accessToken;
 
@@ -47,10 +47,10 @@ public class ConnectAPI {
         System.out.println("Response Code: " + responseCode);
         BufferedReader in = null;
         if ((responseCode >= 200) && (responseCode <= 202)) {
-            in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+            in = new BufferedReader(new InputStreamReader(con.getInputStream(), "utf8"));
         } else {
             System.out.println(con.getErrorStream());
-            in = new BufferedReader(new InputStreamReader(con.getErrorStream()));
+            in = new BufferedReader(new InputStreamReader(con.getErrorStream(), "utf8"));
         }
         String inputLine;
         StringBuffer response = new StringBuffer();
