@@ -84,7 +84,7 @@ public class AuthController {
             return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_PASSWORD_E002.getMessage(), null);
         }
         if (userRepository.existsByEmail(signUpRequest.getEmail())) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_EMAIL_E002.getMessage(), null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_EMAIL_E003.getMessage(), null);
         }
         if (userRepository.existsByPhone(signUpRequest.getPhone())) {
             return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.VALIDATION_PHONE_E002.getMessage(), null);
