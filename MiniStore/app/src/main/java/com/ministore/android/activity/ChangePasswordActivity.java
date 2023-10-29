@@ -16,6 +16,7 @@ import com.ministore.android.R;
 import com.ministore.android.api.ApiService;
 import com.ministore.android.model.JwtResponse;
 import com.ministore.android.model.UpdatePasswordRequest;
+import com.ministore.android.util.Constants;
 
 import java.io.IOException;
 
@@ -55,15 +56,15 @@ public class ChangePasswordActivity extends AppCompatActivity {
                 String confirmPass = edtConfirmPass.getText().toString().trim();
 
                 if (oldPass.isEmpty()) {
-                    showMessage("Please type your old password!");
+                    showMessage(Constants.OLD_PASSWORD_BLANK.getMessage());
                     return;
                 }
                 if (newPass.isEmpty()) {
-                    showMessage("Please type your new password!");
+                    showMessage(Constants.NEW_PASSWORD_BLANK.getMessage());
                     return;
                 }
                 if (!confirmPass.equals(newPass)) {
-                    showMessage("Confirm password is incorrect!");
+                    showMessage(Constants.CONFIRM_PASSWORD_FAIL.getMessage());
                     return;
                 }
 
@@ -91,7 +92,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
                                     return;
                                 }
                                 if (!response.isSuccessful()) {
-                                    showMessage("Change password fail!\n" + response.message());
+                                    showMessage(Constants.VALIDATION_FAIL.getMessage() +"\n" + response.message());
                                     return;
                                 }
                                 Toast.makeText(ChangePasswordActivity.this, response.body(), Toast.LENGTH_SHORT).show();

@@ -39,6 +39,7 @@ import com.ministore.android.model.Province;
 import com.ministore.android.model.ResponseObject;
 import com.ministore.android.model.Ward;
 import com.ministore.android.request.CartRequest;
+import com.ministore.android.util.Constants;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -198,11 +199,11 @@ public class MyApplication extends Application {
                                 Cart cart = gson.fromJson(gson.toJson(responseObject.getData()), Cart.class);
                                 if (cart.getQuantity() > 0) {
                                     MyApplication.cartAdapter.updateItem(cart);
-                                    listener.onCartShowMessage("Cart quantity updated!");
+                                    listener.onCartShowMessage(Constants.UPDATE_QUANTITY_CART.getMessage());
                                 }
                                 else {
                                     MyApplication.cartAdapter.removeItem(cart);
-                                    listener.onCartShowMessage("Removed product from your cart!");
+                                    listener.onCartShowMessage(Constants.REMOVE_PRODUCT_CART.getMessage());
                                 }
                                 MainActivity.updateCartItemCount();
                                 break;
@@ -271,11 +272,11 @@ public class MyApplication extends Application {
                                 Cart cart = gson.fromJson(gson.toJson(responseObject.getData()), Cart.class);
                                 if (cart.getQuantity() > 0) {
                                     MyApplication.cartAdapter.updateItem(cart);
-                                    listener.onCartShowMessage("Cart quantity updated!");
+                                    listener.onCartShowMessage(Constants.UPDATE_QUANTITY_CART.getMessage());
                                 }
                                 else {
                                     MyApplication.cartAdapter.removeItem(cart);
-                                    listener.onCartShowMessage("Removed product from your cart!");
+                                    listener.onCartShowMessage(Constants.REMOVE_PRODUCT_CART.getMessage());
                                 }
                                 MainActivity.updateCartItemCount();
                                 break;
