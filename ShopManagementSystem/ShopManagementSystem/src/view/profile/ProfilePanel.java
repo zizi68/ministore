@@ -337,7 +337,7 @@ public class ProfilePanel extends javax.swing.JPanel {
                                 String str = response.body().string();
                                 user.setImage(str);
                                 Response res = uc.updateUser(user);
-                                JOptionPane.showMessageDialog(null, res.getMessage());
+                                JOptionPane.showMessageDialog(null, "Chỉnh sửa thông tin cá nhân thành công");
                                 if (res.getResponseCode() == 200) {
                                     u = uc.getUserById(String.valueOf(LoginFrame.userID));
                                 } else {
