@@ -221,24 +221,24 @@ public class UserController {
                                             BindingResult bindingResult) {
         User user = userRepository.getById(request.getId());
         if (user == null) {
-            return ResponseEntity.badRequest().body("Error: User not found!");
+            return ResponseEntity.badRequest().body(Constants.USER_404.getMessage());
         }
         if (!encoder.matches(request.getOldPassword(), user.getPassword())) {
             System.out.println(encoder.encode(request.getOldPassword()));
             System.out.println(encoder.encode(user.getPassword()));
-            return ResponseEntity.badRequest().body("Error: Old password is incorrect!");
+            return ResponseEntity.badRequest().body(Constants.VALIDATION_PASSWORD_E003.getMessage());
         }
         if (bindingResult.hasErrors()) {
             return ResponseEntity.badRequest()
                     .body("Error: " + bindingResult.getAllErrors().get(0).getDefaultMessage());
         }
-        if (request.getNewPassword().trim().length() < 6) {
-            return ResponseEntity.badRequest().body("The length of the password must be least at 6 charaters");
+        if (request.getNewPassword().trim().length() < 6 || request.getNewPassword().trim().length() > 40) {
+            return ResponseEntity.badRequest().body(Constants.VALIDATION_PASSWORD_E002.getMessage());
         }
 
         user.setPassword(encoder.encode(request.getNewPassword().trim()));
         userRepository.save(user);
-        return ResponseEntity.ok().body("Update password successfully!");
+        return ResponseEntity.ok().body(Constants.VALIDATION_SUCCESS.getMessage());
     }
 
     @PutMapping(value = "setStatus")
@@ -250,9 +250,9 @@ public class UserController {
             }
 
             userService.deleteUser1(user.getId());
-            return ResponseEntity.ok("Set status user successfully!");
+            return ResponseEntity.ok(Constants.VALIDATION_SUCCESS.getMessage());
         } catch (NotFoundException e) {
-            return ResponseEntity.badRequest().body("User not found!");
+            return ResponseEntity.badRequest().body(Constants.USER_404.getMessage());
         }
     }
 
@@ -262,7 +262,7 @@ public class UserController {
         try {
             user = userService.getAllUserByRole(role);
         } catch (NotFoundException e) {
-            return ResponseEntity.badRequest().body("User is unavaiable");
+            return ResponseEntity.badRequest().body(Constants.USER_404.getMessage());
         }
         return ResponseEntity.ok(user);
     }

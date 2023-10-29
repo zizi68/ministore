@@ -8,6 +8,7 @@ import com.moht1.webapi.dto.OrderSummaryDTO;
 import com.moht1.webapi.model.*;
 import com.moht1.webapi.repository.OrderDetailRepository;
 import com.moht1.webapi.service.*;
+import com.moht1.webapi.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -60,7 +61,7 @@ public class OrderController {
         Order order = null;
         order = orderService.findById(id);
         if (order == null)
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Order is unavaiable", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.ORDER_404.getMessage(), null);
         return ResponseEntity.ok(order);
     }
 
@@ -71,7 +72,7 @@ public class OrderController {
         try {
             order = orderService.findByStatusOrderByDateDesc(orderStatusService.findById(statusId));
         } catch (NotFoundException e) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Order is unavaiable", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.ORDER_404.getMessage(), null);
         }
         return ResponseEntity.ok(order);
     }
@@ -82,7 +83,7 @@ public class OrderController {
         try {
             list = orderService.findOrderDetailByOrderId(orderId);
         } catch (NotFoundException e) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Order is unavaiable", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.ORDER_404.getMessage(), null);
         }
         return ResponseEntity.ok(list);
     }
@@ -100,11 +101,10 @@ public class OrderController {
                                                @RequestParam(value = "payment", required = false) Optional<String> payment) {
         Order order = null;
 
-
         order = orderService.findById(id);
 
         if (order == null)
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Order is unavaiable", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.ORDER_404.getMessage(), null);
 
 //		if (statusId == 3)
 //			if (orderDetailService.updateSoldQuantityByOrderDetail(order.getOrderDetails(), 1) == false)
@@ -129,7 +129,7 @@ public class OrderController {
 
         orderService.updateOrder(order, statusId);
 
-        return AppUtils.returnJS(HttpStatus.OK, "Update order successfully!", null);
+        return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), null);
     }
 
     @GetMapping("/user/{id}")
@@ -142,11 +142,11 @@ public class OrderController {
         }
 
         if (user == null) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User not found!", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.USER_404.getMessage(), null);
         }
         OrderStatus orderStatus = orderStatusService.findById(statusId);
         if (orderStatus == null) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Status id not invalid!", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.STATUS_INVALID.getMessage(), null);
         }
 
         List<Order> orders = null;
@@ -186,11 +186,11 @@ public class OrderController {
         }
 
         if (user == null) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User not found!", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.USER_404.getMessage(), null);
         }
         OrderStatus orderStatus = orderStatusService.findById(statusId);
         if (orderStatus == null) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Status id not invalid!", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.STATUS_INVALID.getMessage(), null);
         }
         List<Order> orders = orderService.findByUserAndStatusOrderByDateDesc(user, orderStatus);
         List<OrderDTO> orders2 = new ArrayList<OrderDTO>();
@@ -216,7 +216,7 @@ public class OrderController {
         try {
             list = orderService.findOrderDetailByOrderId(orderId);
         } catch (NotFoundException e) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Order is unavaiable", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.ORDER_404.getMessage(), null);
         }
         OrderSummaryDTO dto = new OrderSummaryDTO();
         dto.setOrderDetail(list.get(0));
@@ -228,7 +228,7 @@ public class OrderController {
     public ResponseEntity<?> insertOrderByUserId(@PathVariable("id") Integer id, @RequestBody Order order) {
         User user = userService.findById(id);
         if (user == null) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User not found!", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.USER_404.getMessage(), null);
         }
         order.setDate(new Date());
         order.setUser(user);
@@ -236,7 +236,7 @@ public class OrderController {
 //			order.setPaymentType("off");
 
         order = orderService.updateOrder(order, 1);
-        return AppUtils.returnJS(HttpStatus.OK, "Save order successfully!", order);
+        return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), order);
     }
 
 
@@ -244,7 +244,7 @@ public class OrderController {
     public ResponseEntity<?> insertOrderByUserId2(@PathVariable("id") Integer id, @RequestBody Order order) {
         User user = userService.findById(id);
         if (user == null) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User not found!", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.USER_404.getMessage(), null);
         }
         order.setDate(new Date());
         order.setUser(user);
@@ -270,7 +270,7 @@ public class OrderController {
         orderDetailService.saveListOrderDetail(listOrderDetail);
 
 
-        return AppUtils.returnJS(HttpStatus.OK, "Save order successfully!", null);
+        return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), null);
     }
 
     @PostMapping("/add")
@@ -282,7 +282,7 @@ public class OrderController {
         order.setDate(new Date());
         order.setUser(user);
         order = orderService.updateOrder(order, 1);
-        return AppUtils.returnJS(HttpStatus.OK, "Save order successfully!", order);
+        return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), order);
 
     }
 
@@ -290,11 +290,11 @@ public class OrderController {
     public ResponseEntity<?> repurchaseByOrderId(@PathVariable("id") Integer id) {
         Order order = orderService.findById(id);
         if (order == null) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Order not found!", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.ORDER_404.getMessage(), null);
         }
         User user = userService.findById(order.getUser().getId());
         if (user == null) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User not found!", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.USER_404.getMessage(), null);
         }
         List<Cart> addCartList = new ArrayList<Cart>();
         List<OrderDetail> orderDetailList = order.getOrderDetails();
@@ -328,7 +328,7 @@ public class OrderController {
             // return AppUtils.returnJS(HttpStatus.OK, "Add cart successfully!", cart);
         }
 
-        return AppUtils.returnJS(HttpStatus.OK, "Add list cart successfully!", addCartList);
+        return AppUtils.returnJS(HttpStatus.OK, Constants.ADDTOCART_SUCCESS.getMessage(), addCartList);
 
     }
 }

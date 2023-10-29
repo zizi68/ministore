@@ -11,6 +11,7 @@ import com.moht1.webapi.model.Product;
 import com.moht1.webapi.model.User;
 import com.moht1.webapi.payload.request.CartRequest;
 import com.moht1.webapi.service.*;
+import com.moht1.webapi.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -73,7 +74,7 @@ public class CartController {
 
         }
 
-        return AppUtils.returnJS(HttpStatus.OK, "Add cart successfully!", null);
+        return AppUtils.returnJS(HttpStatus.OK, Constants.ADDTOCART_SUCCESS.getMessage(), null);
     }
 
     @PostMapping("/update-cart")
@@ -92,7 +93,7 @@ public class CartController {
         int maximumQuantity = product.getQuantity();
         if (quantityofProduct > maximumQuantity) {
             return AppUtils.returnJS(HttpStatus.BAD_REQUEST,
-                    "The requested quantity exceeds the remaining quantity of this product!", null);
+                    Constants.CART_CHECK_QUANTITY.getMessage(), null);
         }
         CartSupport cartSupport = new CartSupport(cartService.getCartByUser(user));
         cartSupport.updateItem(product, quantityofProduct);
@@ -102,7 +103,7 @@ public class CartController {
             cartService.updateItemsCartChangeQuatity(user, product, quantityofProduct);
         }
 
-        return AppUtils.returnJS(HttpStatus.OK, "Update cart successfully!", null);
+        return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), null);
     }
 
     @PostMapping("/remove-item")
@@ -125,7 +126,7 @@ public class CartController {
 
             cartService.deleteItems(user, product);
         }
-        return AppUtils.returnJS(HttpStatus.OK, "Remove cart successfully!", null);
+        return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), null);
     }
 
     @GetMapping("")
@@ -152,11 +153,11 @@ public class CartController {
         Product product = productService.findById(cartRequest.getProductId());
 
         if (product == null) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Product not found!", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.PRODUCT_404.getMessage(), null);
         }
         User user = userService.findById(cartRequest.getUserId());
         if (user == null) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User not found!", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.USER_404.getMessage(), null);
         }
         int quantity = cartRequest.getQuantity();
 
@@ -179,18 +180,18 @@ public class CartController {
         FullProduct p = new FullProduct(cart.getProduct(), priceHistoryService.getLatestPrice(cart.getProduct()),
                 promotionService.getCurrentPromotionByProduct(cart.getProduct()));
         FullCart result = new FullCart(cart.getId(), p, cart.getUser(), cart.getQuantity());
-        return AppUtils.returnJS(HttpStatus.OK, "Add cart successfully!", result);
+        return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), result);
     }
 
     @PutMapping
     public ResponseEntity<?> putCart(@RequestBody CartRequest cartRequest) {
         Product product = productService.findById(cartRequest.getProductId());
         if (product == null) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Product not found!", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.PRODUCT_404.getMessage(), null);
         }
         User user = userService.findById(cartRequest.getUserId());
         if (user == null) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User not found!", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.USER_404.getMessage(), null);
         }
         int quantity = cartRequest.getQuantity();
 
@@ -208,7 +209,7 @@ public class CartController {
 
             cartService.deleteCart(cart.getId());
             cart.setQuantity(0);
-            return AppUtils.returnJS(HttpStatus.OK, "Delete cart successfully!", cart);
+            return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), cart);
         }
 
         if (cart == null) {
@@ -227,7 +228,7 @@ public class CartController {
         FullProduct p = new FullProduct(cart.getProduct(), priceHistoryService.getLatestPrice(cart.getProduct()),
                 promotionService.getCurrentPromotionByProduct(cart.getProduct()));
         FullCart result = new FullCart(cart.getId(), p, cart.getUser(), cart.getQuantity());
-        return AppUtils.returnJS(HttpStatus.OK, "Edit cart successfully!", result);
+        return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), result);
     }
 
 
