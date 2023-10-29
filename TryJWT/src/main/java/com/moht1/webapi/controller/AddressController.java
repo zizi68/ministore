@@ -8,6 +8,7 @@ import com.moht1.webapi.repository.UserRepository;
 import com.moht1.webapi.repository.WardRepository;
 import com.moht1.webapi.service.AddressService;
 import com.moht1.webapi.service.UserService;
+import com.moht1.webapi.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -64,14 +65,14 @@ public class AddressController {
 	public ResponseEntity<?> addAddressToUser(@PathVariable("userId") Integer id, @Valid @RequestBody Address address, BindingResult bindingResult) {
     	User user = userService.findById(id);
     	if (user == null) {
-			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "User not found!", null);
+			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.USER_404.getMessage(), null);
 		}
 		if (bindingResult.hasErrors()) {
 			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, bindingResult.getAllErrors().get(0).getDefaultMessage(), null);
 		}
 		address.setUser(user);
 		address = addressService.addAddress(address);
-		return AppUtils.returnJS(HttpStatus.OK, "Save address successfully!", address);
+		return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), address);
 	}
     
     @PutMapping(value = "/address")
@@ -80,35 +81,35 @@ public class AddressController {
 		oldAddress = addressService.findById(newAddress.getId());
 		
 		if(oldAddress == null)
-			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Address is unavaiable", null);
+			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.ADDRESS_404.getMessage(), null);
 		
 		if (bindingResult.hasErrors())
 			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, bindingResult.getAllErrors().get(0).getDefaultMessage(), null);
 
 		newAddress.setUser(oldAddress.getUser());
 		addressService.updateAddress1(newAddress);
-		return AppUtils.returnJS(HttpStatus.OK, "Update address successfully!", newAddress);
+		return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), newAddress);
     }
 			
     @PutMapping("/address/{id}")
    	public ResponseEntity<?> updateAddressToUser(@PathVariable("id") Integer id, @Valid @RequestBody Address address) {
     	Address oldAddress = addressService.findById(id);
 		if (oldAddress == null) {
-			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Address not found!", null);
+			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.ADDRESS_404.getMessage(), null);
 		}
 		
 		oldAddress.setSpecificAddress(address.getSpecificAddress());
 		oldAddress.setWard(address.getWard());
 		
    		addressService.updateAddress(oldAddress);
-   		return AppUtils.returnJS(HttpStatus.OK, "Update address successfully!", oldAddress);
+   		return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), oldAddress);
    	}
     
     @DeleteMapping("/address/{id}")
 	public ResponseEntity<?> deleteAddressById(@PathVariable("id") Integer id) {
     	Address address = addressService.findById(id);
 		if (address == null) {
-			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Address not found!", null);
+			return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.ADDRESS_404.getMessage(), null);
 		}
 		if(address.getUser() != null) {
 			User user = userService.findById(address.getUser().getId());
@@ -123,6 +124,6 @@ public class AddressController {
 		
 		addressService.deleteById(id);
 		
-		return AppUtils.returnJS(HttpStatus.OK, "Delete address successfully!", null);
+		return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), null);
 	}
 }

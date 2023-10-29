@@ -5,6 +5,7 @@ import com.moht1.webapi.dto.FullProduct;
 import com.moht1.webapi.dto.ProductOutput;
 import com.moht1.webapi.model.Product;
 import com.moht1.webapi.service.*;
+import com.moht1.webapi.util.Constants;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
@@ -64,7 +65,7 @@ public class ProductController {
         product = productService.findById(id);
 
         if (product == null) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Product is unavaiable", product);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.PRODUCT_404.getMessage(), product);
         }
 
         FullProduct fullProduct = new FullProduct(product, priceHistoryService.getLatestPrice(product), promotionService.getCurrentPromotionByProduct(product));

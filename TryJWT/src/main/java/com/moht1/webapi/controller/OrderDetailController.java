@@ -6,6 +6,7 @@ import com.moht1.webapi.model.OrderDetail;
 import com.moht1.webapi.service.OrderDetailService;
 import com.moht1.webapi.service.OrderService;
 import com.moht1.webapi.service.ProductService;
+import com.moht1.webapi.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -31,16 +32,16 @@ public class OrderDetailController {
     public ResponseEntity<?> insertOrderDetailByOrderId(@PathVariable("id") Integer id, @RequestBody List<OrderDetail> orderDetails) {
         Order order = orderService.findById(id);
         if (order == null) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Order not found!", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.ORDER_404.getMessage(), null);
         }
         for (OrderDetail o : orderDetails)
             o.setOrder(order);
 
         if (orderDetailService.updateSoldQuantityByOrderDetail(orderDetails, 1) == false)
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Order containing product have been sold out", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.OUT_OF_PRODUCT.getMessage(), null);
 
         orderDetailService.saveListOrderDetail(orderDetails);
-        return AppUtils.returnJS(HttpStatus.OK, "Save order details successfully!", null);
+        return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), null);
     }
 
 

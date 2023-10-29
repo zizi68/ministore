@@ -34,6 +34,7 @@ import com.ministore.android.api.ApiService;
 import com.ministore.android.model.UpdateProfileRequest;
 import com.ministore.android.model.User;
 import com.ministore.android.response.ResponseBody;
+import com.ministore.android.util.Constants;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
@@ -136,26 +137,26 @@ public class _UserInfoFragment extends Fragment {
             String firstname = edtFirstname.getText().toString().trim();
             String lastname = edtFirstname.getText().toString().trim();
             if (firstname.isEmpty() || lastname.isEmpty()) {
-                showMessage("Name must not be empty!");
+                showMessage(Constants.NAME_BLANK.getMessage());
                 return;
             }
 
 
             String email = edtEmail.getText().toString().trim();
             if (email.isEmpty() ) {
-                showMessage("email must not be empty!");
+                showMessage(Constants.EMAIL_BLANK.getMessage());
                 return;
             }
 
             String username = edtUsername.getText().toString().trim();
             if (username.isEmpty() ) {
-                showMessage("username must not be empty!");
+                showMessage(Constants.USERNAME_BLANK.getMessage());
                 return;
             }
 
             String phone = edtPhone.getText().toString().trim();
             if (phone.isEmpty() ) {
-                showMessage("phone must not be empty!");
+                showMessage(Constants.PHONE_BLANK.getMessage());
                 return;
             }
 
@@ -216,26 +217,26 @@ public class _UserInfoFragment extends Fragment {
             String firstname = edtFirstname.getText().toString().trim();
             String lastname = edtLastname.getText().toString().trim();
             if (firstname.isEmpty() || lastname.isEmpty()) {
-                showMessage("Name must not be empty!");
+                showMessage(Constants.NAME_BLANK.getMessage());
                 return;
             }
 
 
             String email = edtEmail.getText().toString().trim();
             if (email.isEmpty() ) {
-                showMessage("email must not be empty!");
+                showMessage(Constants.EMAIL_BLANK.getMessage());
                 return;
             }
 
             String username = edtUsername.getText().toString().trim();
             if (username.isEmpty() ) {
-                showMessage("username must not be empty!");
+                showMessage(Constants.USERNAME_BLANK.getMessage());
                 return;
             }
 
             String phone = edtPhone.getText().toString().trim();
             if (phone.isEmpty() ) {
-                showMessage("phone must not be empty!");
+                showMessage(Constants.PHONE_BLANK.getMessage());
                 return;
             }
 
@@ -308,7 +309,7 @@ public class _UserInfoFragment extends Fragment {
                                     return;
                                 }
                                 if (!response.isSuccessful()) {
-                                    showMessage("Update failed!\n" + response.message());
+                                    showMessage(Constants.VALIDATION_FAIL.getMessage() +"\n" + response.message());
                                     return;
                                 }
                                 showMessage(response.body());

@@ -102,7 +102,7 @@ public class SignupTabFragment extends Fragment {
                                     return;
                                 }
                                 if (!response.isSuccessful()) {
-                                    showMessage("Đăng ký thất bại!\n" + response.message());
+                                    showMessage(Constants.VALIDATION_FAIL.getMessage() + "\n" + response.message());
                                     return;
                                 }
                                 responseObject = response.body();

@@ -6,6 +6,7 @@ import com.moht1.webapi.model.Order;
 import com.moht1.webapi.service.OrderService;
 import com.moht1.webapi.service.OrderStatusService;
 import com.moht1.webapi.service.UserService;
+import com.moht1.webapi.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -34,7 +35,7 @@ public class ShipperOrderController {
         try {
             order = orderService.findByStatusOrderAndShipperByDateDesc(orderStatusService.findById(statusId), userService.findById(shipperId));
         } catch (NotFoundException e) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Order is unavaiable", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.ORDER_404.getMessage(), null);
         }
         return ResponseEntity.ok(order);
     }
