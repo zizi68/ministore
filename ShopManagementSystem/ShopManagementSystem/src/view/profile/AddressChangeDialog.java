@@ -317,8 +317,15 @@ public class AddressChangeDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jComboBox_DistrictItemStateChanged
 
     private void jButton_AddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_AddActionPerformed
+        String addr = new String(jTextField_Address.getText());
+
+        if (addr.equalsIgnoreCase("")) {
+            JOptionPane.showMessageDialog(null, "Không được để trống address. Vui lòng nhập lại!", "Thông báo", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
         Address address = new Address();
-        address.setSpecificAddress(jTextField_Address.getText());
+        address.setSpecificAddress(addr);
 
         address.setWard((Ward) jComboBox_Commune.getSelectedItem());
         Response res = ac.addAddress(LoginFrame.userID, address);
@@ -336,9 +343,16 @@ public class AddressChangeDialog extends javax.swing.JDialog {
 
     private void jButton_ModifyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ModifyActionPerformed
         // TODO add your handling code here:
+        String addr = new String(jTextField_Address.getText());
+
+        if (addr.equalsIgnoreCase("")) {
+            JOptionPane.showMessageDialog(null, "Không được để trống address. Vui lòng nhập lại!", "Thông báo", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        
         Address address = new Address();
         address.setAddressId(addressId);
-        address.setSpecificAddress(jTextField_Address.getText());
+        address.setSpecificAddress(addr);
         address.setWard((Ward) jComboBox_Commune.getSelectedItem());
         Response res = ac.updateAddressByID(address);
 //        JOptionPane.showMessageDialog(null, res.getMessage());

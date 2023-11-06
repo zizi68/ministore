@@ -36,7 +36,7 @@ public class APIClient {
             }).build();
 
             retrofit = new Retrofit.Builder()
-                    .baseUrl("https://9360-2405-4803-c87b-e660-ecf8-7b22-ad6c-6e8c.ngrok-free.app/")
+                    .baseUrl("http://localhost:8000/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(client)
                     .build();

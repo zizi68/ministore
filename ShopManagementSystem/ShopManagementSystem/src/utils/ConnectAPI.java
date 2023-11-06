@@ -20,7 +20,7 @@ import model.Response;
  */
 public class ConnectAPI {
 
-    public static final String LOCALHOST = "https://9360-2405-4803-c87b-e660-ecf8-7b22-ad6c-6e8c.ngrok-free.app";
+    public static final String LOCALHOST = "http://localhost:8000";
     public static String tokenType;
     public static String accessToken;
 
