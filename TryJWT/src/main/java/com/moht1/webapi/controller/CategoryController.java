@@ -4,6 +4,7 @@ import com.moht1.webapi.Exception.AppUtils;
 import com.moht1.webapi.dto.CategoryOutput;
 import com.moht1.webapi.model.Category;
 import com.moht1.webapi.service.CategoryService;
+import com.moht1.webapi.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.InputStreamResource;
@@ -86,7 +87,7 @@ public class CategoryController {
         category = categoryService.findById(id);
 
         if (category == null)
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Category is unavaiable", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.CATEGORY_404.getMessage(), null);
 
         return ResponseEntity.ok(category);
     }

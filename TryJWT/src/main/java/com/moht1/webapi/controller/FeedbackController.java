@@ -7,6 +7,7 @@ import com.moht1.webapi.service.FeedbackService;
 import com.moht1.webapi.service.OrderDetailService;
 import com.moht1.webapi.service.ProductService;
 import com.moht1.webapi.service.UserService;
+import com.moht1.webapi.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -62,13 +63,13 @@ public class FeedbackController {
 //		Integer productId = feedback.getOrderDetail().getId();
         OrderDetail detail = orderDetailService.findById(orderDetailId);
         if (detail == null) {
-            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, "Order detail not found!", null);
+            return AppUtils.returnJS(HttpStatus.BAD_REQUEST, Constants.ORDER_DETAIL_404.getMessage(), null);
         }
 
         feedback.setDate(new Date());
         feedback.setOrderDetail(detail);
         feedback = feedbackService.saveFeedback(feedback);
 
-        return AppUtils.returnJS(HttpStatus.OK, "Save feedback successfully!", feedback);
+        return AppUtils.returnJS(HttpStatus.OK, Constants.VALIDATION_SUCCESS.getMessage(), feedback);
     }
 }

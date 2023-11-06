@@ -5,6 +5,7 @@ import com.moht1.webapi.model.User;
 import com.moht1.webapi.repository.UserRepository;
 import com.moht1.webapi.security.JavaSenderService;
 import com.moht1.webapi.service.UserService;
+import com.moht1.webapi.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -36,7 +37,7 @@ public class OTPController {
 
             return ResponseEntity.ok(userDTO);
         } catch (NotFoundException e) {
-            return ResponseEntity.badRequest().body("User is unavaiable");
+            return ResponseEntity.badRequest().body(Constants.USER_404.getMessage());
         }
 
     }
