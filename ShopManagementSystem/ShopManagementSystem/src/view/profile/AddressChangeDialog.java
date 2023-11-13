@@ -17,6 +17,7 @@ import model.Province;
 import model.Response;
 import model.Ward;
 import swing.UIController;
+import utils.MessageConstants;
 import view.login.LoginFrame;
 
 /**
@@ -320,7 +321,7 @@ public class AddressChangeDialog extends javax.swing.JDialog {
         String addr = new String(jTextField_Address.getText());
 
         if (addr.equalsIgnoreCase("")) {
-            JOptionPane.showMessageDialog(null, "Không được để trống address. Vui lòng nhập lại!", "Thông báo", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, MessageConstants.ADDRESS_NOT_BLANK, "Thông báo", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
@@ -331,7 +332,7 @@ public class AddressChangeDialog extends javax.swing.JDialog {
         Response res = ac.addAddress(LoginFrame.userID, address);
         //JOptionPane.showMessageDialog(null, res.getMessage());
         if (res.getResponseCode() == 200) {
-            JOptionPane.showMessageDialog(null, "Save address successfully!");
+            JOptionPane.showMessageDialog(null, MessageConstants.SAVE_ADD_SUCCESS);
             loadData();
             jButton_Modify.setEnabled(false);
             jButton_Remove.setEnabled(false);
@@ -346,7 +347,7 @@ public class AddressChangeDialog extends javax.swing.JDialog {
         String addr = new String(jTextField_Address.getText());
 
         if (addr.equalsIgnoreCase("")) {
-            JOptionPane.showMessageDialog(null, "Không được để trống address. Vui lòng nhập lại!", "Thông báo", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, MessageConstants.ADDRESS_NOT_BLANK, "Thông báo", JOptionPane.ERROR_MESSAGE);
             return;
         }
         
@@ -357,7 +358,7 @@ public class AddressChangeDialog extends javax.swing.JDialog {
         Response res = ac.updateAddressByID(address);
 //        JOptionPane.showMessageDialog(null, res.getMessage());
         if (res.getResponseCode() == 200) {
-            JOptionPane.showMessageDialog(null, "Update address successfully!");
+            JOptionPane.showMessageDialog(null, MessageConstants.UPDATE_ADD_SUCCESS);
             loadData();
             jButton_Modify.setEnabled(false);
             jButton_Remove.setEnabled(false);
@@ -369,7 +370,7 @@ public class AddressChangeDialog extends javax.swing.JDialog {
 
     private void jButton_RemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_RemoveActionPerformed
         // TODO add your handling code here:
-        int luaChon = JOptionPane.showConfirmDialog(this, "Are you sure you want to remove this address?", "OK", 0);
+        int luaChon = JOptionPane.showConfirmDialog(this, MessageConstants.CONFIRM_REMOVE_ADDRESS, "OK", 0);
         if (luaChon == JOptionPane.CANCEL_OPTION) {
             return;
         } else if (luaChon == JOptionPane.OK_OPTION) {

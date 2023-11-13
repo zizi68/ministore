@@ -6,14 +6,11 @@
 package view.promotion;
 
 import com.raven.swing.TimePicker;
-import view.imports.*;
-import controller.ImportsController;
 import controller.ProductController;
 import controller.PromotionController;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -26,14 +23,12 @@ import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
-import model.ImportDetail;
-import model.Product;
 import model.Promotion;
 import model.PromotionDetail;
 import model.Response;
 import swing.UIController;
+import utils.MessageConstants;
 import view.login.LoginFrame;
-import view.products.*;
 
 public class NewPromotionDialog extends javax.swing.JDialog {
 
@@ -520,7 +515,7 @@ public class NewPromotionDialog extends javax.swing.JDialog {
         isEdit = false;
         int selectedRow = jTable_Product.convertRowIndexToModel(jTable_Product.getSelectedRow());
         if (selectedRow == -1) {
-            JOptionPane.showMessageDialog(this, "There is no selected product");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED_PRODUCT);
             return;
         }
         
@@ -528,7 +523,7 @@ public class NewPromotionDialog extends javax.swing.JDialog {
         
         for(int i = 0; i < promotionDetail.size(); i++){
             if(promotionDetail.get(i).getProduct().getProductId() == id){
-                JOptionPane.showMessageDialog(this, "This item has been already added to Promotion Detail");
+                JOptionPane.showMessageDialog(this, MessageConstants.ALREADY_PROMOTION_DETAIL);
                 return;
             }
         }
@@ -546,7 +541,7 @@ public class NewPromotionDialog extends javax.swing.JDialog {
         isEdit = true;
         int selectedRow = jTable_PromotionDetail.convertRowIndexToModel(jTable_PromotionDetail.getSelectedRow());
         if (selectedRow == -1) {
-            JOptionPane.showMessageDialog(this, "There is no selected import detail");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED_PROMOTION);
             return;
         }
         
@@ -564,7 +559,7 @@ public class NewPromotionDialog extends javax.swing.JDialog {
         // TODO add your handling code here:
         int selectedRow = jTable_PromotionDetail.convertRowIndexToModel(jTable_PromotionDetail.getSelectedRow());
         if (selectedRow == -1) {
-            JOptionPane.showMessageDialog(this, "There is no selected import detail");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED_PROMOTION);
             return;
         }
         
@@ -591,18 +586,18 @@ public class NewPromotionDialog extends javax.swing.JDialog {
     private void jButton_CreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_CreateActionPerformed
         // TODO add your handling code here:
         if(promotionDetail.size() == 0)
-            JOptionPane.showMessageDialog(this, "Promotion detail is empty");
+            JOptionPane.showMessageDialog(this, MessageConstants.EMPTY_PROMOTION);
         else{
             Date date1 = convertDate(jDateChooser_StartDate.getDate(), jLabel_StartTime.getText());
             Date date2 = convertDate(jDateChooser_FinishDate.getDate(), jLabel_FinishTime.getText());
             
             if(date1.compareTo(new Date()) < 0) {
-                JOptionPane.showMessageDialog(this, "Start date should be greater then Today");
+                JOptionPane.showMessageDialog(this, MessageConstants.START_GREATER_TODAY);
                 return;
             }
             
             if(date1.compareTo(date2) >= 0) {
-                JOptionPane.showMessageDialog(this, "Finish date should be greater then Start date");
+                JOptionPane.showMessageDialog(this, MessageConstants.START_GREATER_END);
                 return;
             }
             

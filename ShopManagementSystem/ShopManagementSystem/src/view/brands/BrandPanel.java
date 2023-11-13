@@ -16,6 +16,7 @@ import model.Response;
 import output.BrandOutput;
 import swing.UIController;
 import utils.File;
+import utils.MessageConstants;
 
 /**
  *
@@ -406,7 +407,7 @@ public class BrandPanel extends javax.swing.JPanel {
         if (x == JFileChooser.APPROVE_OPTION) {
             java.io.File file = fileChooser.getSelectedFile();
             File.xuatFileExcel("BrandList", (DefaultTableModel) jTable_Brand.getModel(), file.getAbsolutePath() + "/Brand");
-            JOptionPane.showMessageDialog(this, "Export excel file successfully!");
+            JOptionPane.showMessageDialog(this, MessageConstants.EXPORT_EXCEL_SUCCESS);
         }
         else {
             return;

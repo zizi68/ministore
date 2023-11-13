@@ -25,7 +25,6 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import service.APIClient;
 import service.UploadFileService;
-import view.categories.CategoryPanel;
 
 /**
  *

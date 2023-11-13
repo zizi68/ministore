@@ -20,6 +20,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import utils.File;
+import utils.MessageConstants;
 import view.login.LoginFrame;
 
 /**
@@ -1303,7 +1304,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
         if (x == JFileChooser.APPROVE_OPTION) {
             java.io.File file = fileChooser.getSelectedFile();
             File.xuatFileExcel("MostPurchasedCategory", (DefaultTableModel) JTable_Category.getModel(), file.getAbsolutePath() + "/MostPurchasedCategory");
-            JOptionPane.showMessageDialog(this, "Xuất file excel thành công!");
+            JOptionPane.showMessageDialog(this, MessageConstants.EXPORT_EXCEL_SUCCESS);
         } else {
             return;
         }
@@ -1318,7 +1319,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
         if (x == JFileChooser.APPROVE_OPTION) {
             java.io.File file = fileChooser.getSelectedFile();
             File.xuatFileExcel("RevenueStatisticByYear", (DefaultTableModel) jTable_ByYearDetail.getModel(), file.getAbsolutePath() + "/RevenueStatisticByYear");
-            JOptionPane.showMessageDialog(this, "Export excel file succesfully!");
+            JOptionPane.showMessageDialog(this, MessageConstants.EXPORT_EXCEL_SUCCESS);
         } else {
             return;
         }
@@ -1329,7 +1330,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
         int year1 = jYearChooser_ByYearFrom.getValue();
         int year2 = jYearChooser_ByYearTo.getValue();
         if (year1 > year2) {
-            JOptionPane.showMessageDialog(this, "End year should be greater or equal start year");
+            JOptionPane.showMessageDialog(this, MessageConstants.START_GREATER_EQUAL_END_YEAR);
             return;
         }
 
@@ -1355,7 +1356,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
         if (x == JFileChooser.APPROVE_OPTION) {
             java.io.File file = fileChooser.getSelectedFile();
             File.xuatFileExcel("RevenueStatisticByMonth", (DefaultTableModel) jTable_ByMonthDetail.getModel(), file.getAbsolutePath() + "/RevenueStatisticByMonth");
-            JOptionPane.showMessageDialog(this, "Export excel file succesfully!");
+            JOptionPane.showMessageDialog(this, MessageConstants.EXPORT_EXCEL_SUCCESS);
         } else {
             return;
         }
@@ -1373,7 +1374,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
         Date date2 = jDateChooser_EndDate.getDate();
 
         if (date1.compareTo(date2) > 0) {
-            JOptionPane.showMessageDialog(this, "Finish date should be greater than or equal Start date");
+            JOptionPane.showMessageDialog(this, MessageConstants.START_GREATER_EQUAL_END);
             return;
         }
 
@@ -1391,7 +1392,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
         if (x == JFileChooser.APPROVE_OPTION) {
             java.io.File file = fileChooser.getSelectedFile();
             File.xuatFileExcel("RevenueStatisticByDate", (DefaultTableModel) jTable_ByDateDetail.getModel(), file.getAbsolutePath() + "/RevenueStatisticByDate");
-            JOptionPane.showMessageDialog(this, "Export excel file succesfully!");
+            JOptionPane.showMessageDialog(this, MessageConstants.EXPORT_EXCEL_SUCCESS);
         } else {
             return;
         }
@@ -1406,7 +1407,7 @@ public class StatisticsPanel extends javax.swing.JPanel {
         if (x == JFileChooser.APPROVE_OPTION) {
             java.io.File file = fileChooser.getSelectedFile();
             File.xuatFileExcel("MostPurchasedBrand", (DefaultTableModel) JTable_Brand.getModel(), file.getAbsolutePath() + "/MostPurchasedBrand");
-            JOptionPane.showMessageDialog(this, "Xuất file excel thành công!");
+            JOptionPane.showMessageDialog(this, MessageConstants.EXPORT_EXCEL_SUCCESS);
         } else {
             return;
         }

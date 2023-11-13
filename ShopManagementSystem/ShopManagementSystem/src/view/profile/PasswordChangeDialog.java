@@ -13,6 +13,7 @@ import model.Password;
 import model.Response;
 import model.UserDB;
 import org.mindrot.bcrypt.BCrypt;
+import utils.MessageConstants;
 
 /**
  *
@@ -281,16 +282,16 @@ public class PasswordChangeDialog extends javax.swing.JDialog {
         String pwdNew = new String(jPasswordField_New.getPassword());
         String pwdVerify = new String(jPasswordField_Verify.getPassword());
         if (pwdOld.equalsIgnoreCase("") || pwdNew.equalsIgnoreCase("") || pwdVerify.equalsIgnoreCase("")) {
-            JOptionPane.showMessageDialog(null, "Không được để trống password. Vui lòng nhập lại!", "Thông báo", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, MessageConstants.PASSWORD_NOT_BLANK, "Thông báo", JOptionPane.ERROR_MESSAGE);
             return;
         }
         String passwordConfirm = user.getPassword();
         if (!verifyHash(pwdOld, passwordConfirm)) {
-            JOptionPane.showMessageDialog(null, "Sai mật khẩu. Vui lòng nhập lại!", "Thông báo", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, MessageConstants.PASSWORD_WRONG, "Thông báo", JOptionPane.ERROR_MESSAGE);
             return;
         }
         if (!pwdNew.equals(pwdVerify)) {
-            JOptionPane.showMessageDialog(null, "Mật khẩu mới và mật khẩu xác nhận không trùng nhau. Vui lòng nhập lại!", "Thông báo", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, MessageConstants.PASSWORD_NOT_MATCH, "Thông báo", JOptionPane.ERROR_MESSAGE);
             return;
         }
 

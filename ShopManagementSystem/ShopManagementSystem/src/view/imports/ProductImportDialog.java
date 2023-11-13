@@ -9,11 +9,9 @@ import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 import model.ImportDetail;
 import model.Product;
-import static view.imports.NewImportDialog.importDetail;
-import static view.imports.NewImportDialog.totalPrice;
+import utils.MessageConstants;
 
 public class ProductImportDialog extends javax.swing.JDialog {
 
@@ -246,14 +244,14 @@ public class ProductImportDialog extends javax.swing.JDialog {
         // TODO add your handling code here:
         int addQuantities = (int) jSpinner_ImportAmount.getValue();
         if(addQuantities == 0) {
-            JOptionPane.showMessageDialog(null, "Quantity should be greater than 0");
+            JOptionPane.showMessageDialog(null, MessageConstants.QUANTITY_GREATER_0);
             return;
         }
         
         float price = Float.parseFloat(jSpinner_Price.getValue().toString());
         
         if(price >= oldPrice) {
-            JOptionPane.showMessageDialog(this, "Giá nhập lớn hơn/bằng giá bán hiên tại (" + oldPrice + "), bạn nên chỉnh lại giá bán");
+            JOptionPane.showMessageDialog(this, String.format(MessageConstants.PRICE_GREATER, oldPrice));
         }
         
         ImportDetail detail = new ImportDetail();

@@ -27,6 +27,7 @@ import retrofit2.Callback;
 import service.APIClient;
 import service.UploadFileService;
 import swing.UIController;
+import utils.MessageConstants;
 
 /**
  *
@@ -462,7 +463,7 @@ public class CategoryPanel extends javax.swing.JPanel {
         if (x == JFileChooser.APPROVE_OPTION) {
             java.io.File file = fileChooser.getSelectedFile();
             utils.File.xuatFileExcel("CategoryList", (DefaultTableModel) jTable_Category.getModel(), file.getAbsolutePath() + "/Category");
-            JOptionPane.showMessageDialog(this, "Export excel file successfully!");
+            JOptionPane.showMessageDialog(this, MessageConstants.EXPORT_EXCEL_SUCCESS);
         }
         else {
             return;

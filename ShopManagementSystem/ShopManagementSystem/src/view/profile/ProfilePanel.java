@@ -24,6 +24,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import service.APIClient;
 import service.UploadFileService;
+import utils.MessageConstants;
 import view.login.LoginFrame;
 
 /**
@@ -298,23 +299,23 @@ public class ProfilePanel extends javax.swing.JPanel {
         String phoneNumber = jTextField_PhoneNumber.getText();
 
         if (!verifyName(jTextField_FirstName.getText())) {
-            JOptionPane.showMessageDialog(null, "Không được để trống\nKhông dùng ký tự đặc biệt", 
-                    "Vui lòng nhập first name đúng định dạng sau", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, MessageConstants.VALIDATE_NAME, 
+                    MessageConstants.INPUT_FIRSTNAME, JOptionPane.ERROR_MESSAGE);
             return;
         }
         if (!verifyName(jTextField_LastName.getText())) {
-            JOptionPane.showMessageDialog(null, "Không được để trống\nKhông dùng ký tự đặc biệt", 
-                    "Vui lòng nhập last name đúng định dạng sau", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, MessageConstants.VALIDATE_NAME, 
+                    MessageConstants.INPUT_LASTNAME, JOptionPane.ERROR_MESSAGE);
             return;
         }
         if (!validate(email, VALID_EMAIL_ADDRESS_REGEX)) {
-            JOptionPane.showMessageDialog(null, "Không được để trống\nSử dụng đúng định dạng Email chuẩn", 
-                    "Vui lòng nhập email đúng định dạng", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, MessageConstants.VALIDATE_EMAIL, 
+                    MessageConstants.INPUT_EMAIL, JOptionPane.ERROR_MESSAGE);
             return;
         }
         if (!validate(phoneNumber, VALID_PHONE_NUMBER_REGEX)) {
-            JOptionPane.showMessageDialog(null, "Không được để trống\nChỉ nhận kí tự số \nYêu cầu đủ 10 chữ số", 
-                    "Vui lòng nhập số điện thoại đúng định dạng", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, MessageConstants.VALIDATE_PHONE, 
+                    MessageConstants.INPUT_PHONE, JOptionPane.ERROR_MESSAGE);
             return;
         }
 
@@ -337,7 +338,7 @@ public class ProfilePanel extends javax.swing.JPanel {
                                 String str = response.body().string();
                                 user.setImage(str);
                                 Response res = uc.updateUser(user);
-                                JOptionPane.showMessageDialog(null, "Chỉnh sửa thông tin cá nhân thành công");
+                                JOptionPane.showMessageDialog(null, MessageConstants.EDIT_PROFILE_SUCCESS);
                                 if (res.getResponseCode() == 200) {
                                     u = uc.getUserById(String.valueOf(LoginFrame.userID));
                                 } else {

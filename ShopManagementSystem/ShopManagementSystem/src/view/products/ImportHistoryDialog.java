@@ -5,7 +5,6 @@
  */
 package view.products;
 
-import controller.FeedbackController;
 import controller.PriceHistoryController;
 import java.awt.Color;
 import java.text.SimpleDateFormat;
@@ -15,9 +14,7 @@ import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
-import model.Feedback;
 import model.ImportDetail;
-import model.PriceHistory;
 
 public class ImportHistoryDialog extends javax.swing.JDialog {
 

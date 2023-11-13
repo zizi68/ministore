@@ -39,6 +39,7 @@ import retrofit2.Callback;
 import service.APIClient;
 import service.UploadFileService;
 import swing.UIController;
+import utils.MessageConstants;
 
 /**
  *
@@ -855,7 +856,7 @@ public class UserPanel extends javax.swing.JPanel {
         if (x == JFileChooser.APPROVE_OPTION) {
             java.io.File file = fileChooser.getSelectedFile();
             utils.File.xuatFileExcel("UserList", (DefaultTableModel) jTable_User.getModel(), file.getAbsolutePath() + "/User");
-            JOptionPane.showMessageDialog(this, "Export excel file successfully!");
+            JOptionPane.showMessageDialog(this, MessageConstants.EXPORT_EXCEL_SUCCESS);
         } else {
             return;
         }
@@ -985,7 +986,7 @@ public class UserPanel extends javax.swing.JPanel {
         if (x == JFileChooser.APPROVE_OPTION) {
             java.io.File file = fileChooser.getSelectedFile();
             utils.File.xuatFileExcel("ShipperList", (DefaultTableModel) jTable_Shipper.getModel(), file.getAbsolutePath() + "/Shipper");
-            JOptionPane.showMessageDialog(this, "Export excel file successfully!");
+            JOptionPane.showMessageDialog(this, MessageConstants.EXPORT_EXCEL_SUCCESS);
         } else {
             return;
         }
@@ -1020,7 +1021,7 @@ public class UserPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         int selectedRow = jTable_Shipper.convertRowIndexToModel(jTable_Shipper.getSelectedRow());
         if (selectedRow == -1) {
-            JOptionPane.showMessageDialog(this, "There is no selected product");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED_USER);
             return;
         }
 
@@ -1054,11 +1055,11 @@ public class UserPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         int selectedRow = jTable_Shipper.convertRowIndexToModel(jTable_Shipper.getSelectedRow());
         if (selectedRow == -1) {
-            JOptionPane.showMessageDialog(this, "There is no selected product");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED_USER);
             return;
         }
 
-        int luaChon = JOptionPane.showConfirmDialog(this, "Are you sure you want to remove this shipper?");
+        int luaChon = JOptionPane.showConfirmDialog(this, MessageConstants.CONFIRM_REMOVE_USER);
         if (luaChon == JOptionPane.CANCEL_OPTION) {
             return;
         } else if (luaChon == JOptionPane.OK_OPTION) {

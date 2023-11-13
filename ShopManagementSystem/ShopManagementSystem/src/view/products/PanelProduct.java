@@ -26,10 +26,8 @@ import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 import model.Brand;
 import model.Category;
-import model.PriceHistory;
 import model.Product;
 import model.Response;
-import model.User;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
@@ -40,7 +38,7 @@ import retrofit2.Callback;
 import service.APIClient;
 import swing.UIController;
 import service.UploadFileService;
-import view.login.LoginFrame;
+import utils.MessageConstants;
 
 /**
  *
@@ -1005,11 +1003,11 @@ public class PanelProduct extends javax.swing.JPanel {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setMultiSelectionEnabled(false);
         fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-        int x = fileChooser.showDialog(this, "Choose folder");
+        int x = fileChooser.showDialog(this, MessageConstants.CHOOSE_FOLDER);
         if (x == JFileChooser.APPROVE_OPTION) {
             java.io.File file = fileChooser.getSelectedFile();
             utils.File.xuatFileExcel("ProductList", (DefaultTableModel) jTable_Product.getModel(), file.getAbsolutePath() + "/Product");
-            JOptionPane.showMessageDialog(this, "Export excel file successfully!");
+            JOptionPane.showMessageDialog(this, MessageConstants.EXPORT_EXCEL_SUCCESS);
         }
         else {
             return;
@@ -1091,7 +1089,7 @@ public class PanelProduct extends javax.swing.JPanel {
         // TODO add your handling code here:
         int selectedRow = jTable_Product.convertRowIndexToModel(jTable_Product.getSelectedRow());
         if (selectedRow == -1) {
-            JOptionPane.showMessageDialog(this, "There is no selected product");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED_PRODUCT);
             return;
         }
         
@@ -1124,7 +1122,7 @@ public class PanelProduct extends javax.swing.JPanel {
         // TODO add your handling code here:
         String str = jTextField_ID.getText();
         if(str.equals("")) {
-            JOptionPane.showMessageDialog(this, "No product selected");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED_PRODUCT);
             return;
         }
         selectedProductId = str;
@@ -1139,11 +1137,11 @@ public class PanelProduct extends javax.swing.JPanel {
         // TODO add your handling code here:
         int selectedRow = jTable_Product.convertRowIndexToModel(jTable_Product.getSelectedRow());
         if (selectedRow == -1) {
-            JOptionPane.showMessageDialog(this, "There is no selected product");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED_PRODUCT);
             return;
         }
         
-        int luaChon = JOptionPane.showConfirmDialog(this, "Are you sure you want to remove this product?");
+        int luaChon = JOptionPane.showConfirmDialog(this, MessageConstants.CONFIRM_REMOVE_PRODUCT);
         if (luaChon == JOptionPane.CANCEL_OPTION) {
             return;
         } else if (luaChon == JOptionPane.OK_OPTION) {
@@ -1162,7 +1160,7 @@ public class PanelProduct extends javax.swing.JPanel {
         // TODO add your handling code here:
         String str = jTextField_ID.getText();
         if(str.equals("")) {
-            JOptionPane.showMessageDialog(this, "No product selected");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED_PRODUCT);
             return;
         }
         selectedProductId = str;
@@ -1182,7 +1180,7 @@ public class PanelProduct extends javax.swing.JPanel {
         // TODO add your handling code here:
         String str = jTextField_ID.getText();
         if(str.equals("")) {
-            JOptionPane.showMessageDialog(this, "No product selected");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED_PRODUCT);
             return;
         }
         selectedProductId = str;

@@ -18,6 +18,7 @@ import model.OrderDetail;
 import model.Response;
 import model.Return;
 import swing.UIController;
+import utils.MessageConstants;
 import view.login.LoginFrame;
 
 /**
@@ -540,11 +541,11 @@ public class OrderPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         String id = jTextField_ID.getText();
         if (id.equalsIgnoreCase("")) {
-            JOptionPane.showMessageDialog(this, "There is no selected item");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED);
             return;
         }
 
-        int result = JOptionPane.showConfirmDialog(this, "Are you sure?");
+        int result = JOptionPane.showConfirmDialog(this, MessageConstants.CONFIRM);
         if (result != JOptionPane.OK_OPTION) {
             return;
         }
@@ -581,11 +582,11 @@ public class OrderPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         String id = jTextField_ID.getText();
         if (id.equalsIgnoreCase("")) {
-            JOptionPane.showMessageDialog(this, "There is no selected item");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED);
             return;
         }
 
-        int result = JOptionPane.showConfirmDialog(this, "Are you sure?");
+        int result = JOptionPane.showConfirmDialog(this, MessageConstants.CONFIRM);
         if (result != JOptionPane.OK_OPTION) {
             return;
         }
@@ -729,7 +730,7 @@ public class OrderPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         String id = jTextField_ID.getText();
         if (id.equalsIgnoreCase("")) {
-            JOptionPane.showMessageDialog(this, "There is no selected item");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED);
             return;
         }
         
@@ -737,7 +738,7 @@ public class OrderPanel extends javax.swing.JPanel {
         
         Return return0 = rc.getReturnByOrderId(OrderPanel.orderId);
         if(return0.getId() == null){
-            JOptionPane.showMessageDialog(null, "This order doesn't have return infomation");
+            JOptionPane.showMessageDialog(null, MessageConstants.NOT_RETURN_INFO);
             return;
         }
         

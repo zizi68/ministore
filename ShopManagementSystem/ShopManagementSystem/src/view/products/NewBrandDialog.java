@@ -10,7 +10,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import model.Brand;
 import model.Response;
-import view.brands.BrandPanel;
 
 /**
  *

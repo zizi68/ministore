@@ -4,8 +4,6 @@
  */
 package view.promotion;
 
-import view.imports.*;
-import controller.ImportsController;
 import controller.PromotionController;
 import java.util.Date;
 import java.util.List;
@@ -14,12 +12,11 @@ import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
-import model.ImportDetail;
-import model.Imports;
 import model.Promotion;
 import model.PromotionDetail;
 import model.Response;
 import swing.UIController;
+import utils.MessageConstants;
 
 /**
  *
@@ -536,7 +533,7 @@ public class PromotionPanel extends javax.swing.JPanel {
         Date date2 = jDateChooser_FinishDate.getDate();
 
         if (date1.compareTo(date2) > 0) {
-            JOptionPane.showMessageDialog(this, "Finish date should be greater than or equal Start date");
+            JOptionPane.showMessageDialog(this, MessageConstants.START_GREATER_EQUAL_END);
             return;
         }
         jRadioButton_All.setSelected(true);
@@ -581,7 +578,7 @@ public class PromotionPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         int selectedRow = jTable_Promotion.convertRowIndexToModel(jTable_Promotion.getSelectedRow());
         if (selectedRow == -1) {
-            JOptionPane.showMessageDialog(this, "There is no selected promotion");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED_PROMOTION);
             return;
         }
         String id = jTextField_ID.getText();
@@ -603,11 +600,11 @@ public class PromotionPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         int selectedRow = jTable_Promotion.convertRowIndexToModel(jTable_Promotion.getSelectedRow());
         if (selectedRow == -1) {
-            JOptionPane.showMessageDialog(this, "There is no selected promotion");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED_PROMOTION);
             return;
         }
         
-        int luaChon = JOptionPane.showConfirmDialog(this, "Are you sure you want to remove this product?");
+        int luaChon = JOptionPane.showConfirmDialog(this, MessageConstants.CONFIRM_REMOVE_PROMOTION);
         if (luaChon == JOptionPane.CANCEL_OPTION) {
             return;
         } else if (luaChon == JOptionPane.OK_OPTION) {

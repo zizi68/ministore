@@ -19,6 +19,7 @@ import javax.swing.table.TableRowSorter;
 import model.ImportDetail;
 import model.Response;
 import swing.UIController;
+import utils.MessageConstants;
 import view.login.LoginFrame;
 
 public class NewImportDialog extends javax.swing.JDialog {
@@ -467,7 +468,7 @@ public class NewImportDialog extends javax.swing.JDialog {
         isEdit = false;
         int selectedRow = jTable_Product.convertRowIndexToModel(jTable_Product.getSelectedRow());
         if (selectedRow == -1) {
-            JOptionPane.showMessageDialog(this, "There is no selected product");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED_PRODUCT);
             return;
         }
         
@@ -475,7 +476,7 @@ public class NewImportDialog extends javax.swing.JDialog {
         
         for(int i = 0; i < importDetail.size(); i++){
             if(importDetail.get(i).getProduct().getProductId() == id){
-                JOptionPane.showMessageDialog(this, "This item has been already added to Import Detail");
+                JOptionPane.showMessageDialog(this, MessageConstants.ALREADY_IMPORT_DETAIL);
                 return;
             }
         }
@@ -497,7 +498,7 @@ public class NewImportDialog extends javax.swing.JDialog {
         isEdit = true;
         int selectedRow = jTable_ImportDetail.convertRowIndexToModel(jTable_ImportDetail.getSelectedRow());
         if (selectedRow == -1) {
-            JOptionPane.showMessageDialog(this, "There is no selected import detail");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED_IMPORT);
             return;
         }
         
@@ -518,7 +519,7 @@ public class NewImportDialog extends javax.swing.JDialog {
         // TODO add your handling code here:
         int selectedRow = jTable_ImportDetail.convertRowIndexToModel(jTable_ImportDetail.getSelectedRow());
         if (selectedRow == -1) {
-            JOptionPane.showMessageDialog(this, "There is no selected import detail");
+            JOptionPane.showMessageDialog(this, MessageConstants.NO_SELECTED_IMPORT);
             return;
         }
         
@@ -536,7 +537,7 @@ public class NewImportDialog extends javax.swing.JDialog {
     private void jButton_CreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_CreateActionPerformed
         // TODO add your handling code here:
         if(importDetail.isEmpty())
-            JOptionPane.showMessageDialog(this, "Import detail is empty");
+            JOptionPane.showMessageDialog(this, MessageConstants.IMPORT_EMPTY);
         else{
             Response res = ic.addImport(LoginFrame.userID, totalPrice, importDetail);
             JOptionPane.showMessageDialog(null, ic.convertResponse(res.getMessage()).getMessage());

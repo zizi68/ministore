@@ -5,8 +5,6 @@
  */
 package view.orders;
 
-import view.products.*;
-import controller.FeedbackController;
 import controller.UserController;
 import java.awt.Color;
 import java.awt.Image;
@@ -16,9 +14,8 @@ import java.util.Vector;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import model.Feedback;
-import model.User;
 import model.UserDB;
+import utils.MessageConstants;
 
 public class ShipperDialog extends javax.swing.JDialog {
 
@@ -292,7 +289,7 @@ public class ShipperDialog extends javax.swing.JDialog {
         // TODO add your handling code here:
         
         if(jTextField_ID.getText().equals("")){
-            JOptionPane.showMessageDialog(this, "Please choose a shipper!");
+            JOptionPane.showMessageDialog(this, MessageConstants.CHOOSE_SHIPPER);
             return;
         }
         
